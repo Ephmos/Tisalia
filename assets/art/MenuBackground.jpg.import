@@ -3,24 +3,24 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm7esvj3lth8s"
-path="res://.godot/imported/menu_background.jpg-2ecab3c5f264b137660635137ad07938.ctex"
+path="res://.godot/imported/MenuBackground.jpg-01cfb2c3ba2061b3142e6d7a68ee420c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/menu_background.jpg"
-dest_files=["res://.godot/imported/menu_background.jpg-2ecab3c5f264b137660635137ad07938.ctex"]
+source_file="res://assets/art/MenuBackground.jpg"
+dest_files=["res://.godot/imported/MenuBackground.jpg-01cfb2c3ba2061b3142e6d7a68ee420c.ctex"]
 
 [params]
 
 compress/mode=0
-compress/high_quality=false
-compress/lossy_quality=0.7
+compress/high_quality=true
+compress/lossy_quality=0.6
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
-compress/hdr_compression=1
+compress/hdr_compression=2
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

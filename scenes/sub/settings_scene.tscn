@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=3 uid="uid://bt4k28shbnypo"]
+
+[ext_resource type="Script" uid="uid://cnmxb1x6jg0a4" path="res://scripts/settings.gd" id="1_r742m"]
+[ext_resource type="Texture2D" uid="uid://drwm5ee1b5ama" path="res://assets/art/SettingsBackground.jpg" id="2_grckg"]
+[ext_resource type="FontVariation" uid="uid://cer4i81pgi5s1" path="res://others/resources/boldpixels.tres" id="2_qaidr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grckg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gcg8q"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ffpig"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gseo5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r742m")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0.39215687, 0.39215687, 0.39215687, 0.7411765)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_grckg")
+expand_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3125
+anchor_top = 0.25
+anchor_right = 0.6875
+anchor_bottom = 0.73333335
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qaidr")
+theme_override_font_sizes/font_size = 20
+text = "Opciones"
+horizontal_alignment = 1
+
+[node name="VolumeLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "SFX"
+
+[node name="Volume" type="HSlider" parent="VBoxContainer"]
+modulate = Color(0.90469915, 0.9195829, 0.6762659, 1)
+layout_mode = 2
+min_value = -1.0
+max_value = 4.0
+scrollable = false
+
+[node name="MusicLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "Música"
+
+[node name="Music" type="HSlider" parent="VBoxContainer"]
+layout_mode = 2
+min_value = -1.0
+max_value = 4.0
+scrollable = false
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_colors/font_hover_color = Color(0.9490196, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 0)
+theme_override_colors/font_disabled_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+theme_override_fonts/font = ExtResource("2_qaidr")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_grckg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gcg8q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ffpig")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gseo5")
+text = "Volver"
+icon_alignment = 1
+
+[connection signal="value_changed" from="VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/Music" to="." method="_on_music_value_changed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

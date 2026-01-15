@@ -10,9 +10,18 @@ config_version=5
 
 [application]
 
-config/name="tisalia"
+config/name="Tisalia"
 run/main_scene="uid://dnnhh0htyq2tn"
 config/features=PackedStringArray("4.5", "Forward Plus")
+run/max_fps=60
+
+[audio]
+
+buses/default_bus_layout="uid://dvbrg0auk52wb"
+
+[autoload]
+
+MenuMusic="*res://scenes/sub/global_music.tscn"
 
 [display]
 
