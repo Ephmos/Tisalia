@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://cer4i81pgi5s1"]
+
+[ext_resource type="FontFile" uid="uid://tap1ucghnlqa" path="res://assets/fonts/BoldPixels.ttf" id="1_8sf6j"]
+
+[resource]
+base_font = ExtResource("1_8sf6j")
