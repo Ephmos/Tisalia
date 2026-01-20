@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="Tisalia"
+config/version="0.0.1"
 run/main_scene="uid://dnnhh0htyq2tn"
 config/features=PackedStringArray("4.5", "Forward Plus")
-run/max_fps=60
 
 [audio]
 
@@ -28,15 +28,14 @@ MenuMusic="*res://scenes/sub/global_music.tscn"
 window/size/viewport_width=640
 window/size/viewport_height=360
 window/size/mode=3
+window/size/initial_position_type=0
 window/size/resizable=false
-window/size/borderless=true
-window/size/minimize_disabled=true
-window/size/maximize_disabled=true
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/frame_pacing/android/swappy_mode=0
 window/stretch/mode="canvas_items"
 window/stretch/scale_mode="integer"
+window/vsync/vsync_mode=0
 
 [rendering]
 
