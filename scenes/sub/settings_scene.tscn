@@ -1,0 +1,179 @@
+[gd_scene load_steps=9 format=3 uid="uid://bt4k28shbnypo"]
+
+[ext_resource type="Script" uid="uid://cnmxb1x6jg0a4" path="res://scripts/settings.gd" id="1_r742m"]
+[ext_resource type="Texture2D" uid="uid://w6wka8yf2mwu" path="res://assets/art/SettingsBackground.jpg" id="2_grckg"]
+[ext_resource type="FontVariation" uid="uid://cer4i81pgi5s1" path="res://others/resources/boldpixels.tres" id="2_qaidr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_huv7k"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grckg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gcg8q"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ffpig"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gseo5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r742m")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0.39215687, 0.39215687, 0.39215687, 0.7411765)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.0019607968
+anchor_right = 1.0
+anchor_bottom = 1.0019608
+offset_top = 0.70588684
+offset_bottom = -0.7058716
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_grckg")
+expand_mode = 5
+stretch_mode = 6
+metadata/_edit_use_anchors_ = true
+
+[node name="ParentContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3125
+anchor_top = 0.083333336
+anchor_right = 0.6875
+anchor_bottom = 0.9166667
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="ParentContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_qaidr")
+theme_override_font_sizes/font_size = 20
+text = "Opciones"
+horizontal_alignment = 1
+
+[node name="GraphicsContainer" type="VBoxContainer" parent="ParentContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(180, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="GraphicsTitle" type="Label" parent="ParentContainer/GraphicsContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "Gráficos"
+
+[node name="Fullscreen" type="CheckButton" parent="ParentContainer/GraphicsContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_qaidr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_huv7k")
+text = "Pantalla completa"
+
+[node name="FPSCap" type="CheckButton" parent="ParentContainer/GraphicsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_qaidr")
+theme_override_styles/focus = SubResource("StyleBoxFlat_huv7k")
+text = "60 FPS"
+
+[node name="SoundContainer" type="VBoxContainer" parent="ParentContainer"]
+custom_minimum_size = Vector2(180, 90)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="SoundTitle" type="Label" parent="ParentContainer/SoundContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "Sonido"
+
+[node name="MasterLabel" type="Label" parent="ParentContainer/SoundContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "Maestro"
+
+[node name="Master" type="HSlider" parent="ParentContainer/SoundContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+min_value = -5.0
+max_value = 5.0
+scrollable = false
+
+[node name="VolumeLabel" type="Label" parent="ParentContainer/SoundContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "SFX"
+
+[node name="Volume" type="HSlider" parent="ParentContainer/SoundContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+min_value = -1.0
+max_value = 5.0
+scrollable = false
+
+[node name="MusicLabel" type="Label" parent="ParentContainer/SoundContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_qaidr")
+text = "Música"
+
+[node name="Music" type="HSlider" parent="ParentContainer/SoundContainer"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+min_value = -1.0
+max_value = 5.0
+scrollable = false
+
+[node name="Back" type="Button" parent="ParentContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_colors/font_hover_color = Color(0.9490196, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 0)
+theme_override_colors/font_disabled_color = Color(0.8745098, 0.8745098, 0.8745098, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 0)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+theme_override_fonts/font = ExtResource("2_qaidr")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_grckg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gcg8q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ffpig")
+theme_override_styles/focus = SubResource("StyleBoxFlat_gseo5")
+text = "Volver"
+icon_alignment = 1
+
+[connection signal="toggled" from="ParentContainer/GraphicsContainer/Fullscreen" to="." method="_on_fullscreen_toggled"]
+[connection signal="toggled" from="ParentContainer/GraphicsContainer/FPSCap" to="." method="_on_fps_cap_toggled"]
+[connection signal="value_changed" from="ParentContainer/SoundContainer/Master" to="." method="_on_master_value_changed"]
+[connection signal="value_changed" from="ParentContainer/SoundContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="value_changed" from="ParentContainer/SoundContainer/Music" to="." method="_on_music_value_changed"]
+[connection signal="pressed" from="ParentContainer/Back" to="." method="_on_back_pressed"]
