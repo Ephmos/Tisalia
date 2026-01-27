@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dnnhh0htyq2tn"]
+[gd_scene load_steps=9 format=3 uid="uid://dnnhh0htyq2tn"]
 
 [ext_resource type="Script" uid="uid://1kcer23ncpdo" path="res://scripts/menu.gd" id="1_6wmco"]
 [ext_resource type="Texture2D" uid="uid://dm7esvj3lth8s" path="res://assets/art/MenuBackground.jpg" id="2_6wmco"]
+[ext_resource type="Texture2D" uid="uid://5qow3ms03njd" path="res://assets/art/Logo.png" id="3_482oc"]
 [ext_resource type="FontVariation" uid="uid://cer4i81pgi5s1" path="res://others/resources/boldpixels.tres" id="3_u4hxd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
@@ -39,7 +40,16 @@ expand_mode = 1
 stretch_mode = 6
 metadata/_edit_use_anchors_ = true
 
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 258.0
+offset_top = 6.0
+offset_right = 386.0
+offset_bottom = 134.0
+texture = ExtResource("3_482oc")
+
 [node name="Title" type="Label" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.421875
