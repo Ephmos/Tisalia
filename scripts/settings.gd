@@ -83,6 +83,6 @@ func _on_fps_cap_toggled(toggled_on: bool) -> void:
 	if toggled_on:
 		await get_tree().create_timer(0.1).timeout
 		Engine.max_fps = 60
-	else:
+	else:	
 		await get_tree().create_timer(0.1).timeout
 		Engine.max_fps = 0

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ebji8ea1e7u2"
-path="res://.godot/imported/Factory interior.png-34ac784c7b6a63a0367ef18a57bea669.ctex"
+path="res://.godot/imported/Factory interior.png-a701032059f317761df0e20b66ea94e8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tilesets/Factory interior.png"
-dest_files=["res://.godot/imported/Factory interior.png-34ac784c7b6a63a0367ef18a57bea669.ctex"]
+source_file="res://assets/tilesets/Factory interior.png"
+dest_files=["res://.godot/imported/Factory interior.png-a701032059f317761df0e20b66ea94e8.ctex"]
 
 [params]
 

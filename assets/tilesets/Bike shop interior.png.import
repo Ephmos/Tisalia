@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://del3n8i62hg54"
-path="res://.godot/imported/Bike shop interior.png-7a1b049e127ef077e6301eb332a97628.ctex"
+path="res://.godot/imported/Bike shop interior.png-f02f99d488734d993c3b216ed35d68b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tilesets/Bike shop interior.png"
-dest_files=["res://.godot/imported/Bike shop interior.png-7a1b049e127ef077e6301eb332a97628.ctex"]
+source_file="res://assets/tilesets/Bike shop interior.png"
+dest_files=["res://.godot/imported/Bike shop interior.png-f02f99d488734d993c3b216ed35d68b5.ctex"]
 
 [params]
 

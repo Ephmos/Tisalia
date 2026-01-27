@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1e33iwojxxnl"
-path="res://.godot/imported/Gyms interior.png-3e2633979443de6ea18285aeac4ca6d7.ctex"
+path="res://.godot/imported/Gyms interior.png-e405133b074700f578911c858d9831c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tilesets/Gyms interior.png"
-dest_files=["res://.godot/imported/Gyms interior.png-3e2633979443de6ea18285aeac4ca6d7.ctex"]
+source_file="res://assets/tilesets/Gyms interior.png"
+dest_files=["res://.godot/imported/Gyms interior.png-e405133b074700f578911c858d9831c0.ctex"]
 
 [params]
 

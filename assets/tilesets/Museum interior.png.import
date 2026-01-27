@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4ouue07dnd02"
-path="res://.godot/imported/Museum interior.png-09cd4a53fab335a41c66ea941ec11399.ctex"
+path="res://.godot/imported/Museum interior.png-4fbbe7664efbe2d31b5199586558075c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tilesets/Museum interior.png"
-dest_files=["res://.godot/imported/Museum interior.png-09cd4a53fab335a41c66ea941ec11399.ctex"]
+source_file="res://assets/tilesets/Museum interior.png"
+dest_files=["res://.godot/imported/Museum interior.png-4fbbe7664efbe2d31b5199586558075c.ctex"]
 
 [params]
 
