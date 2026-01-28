@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byoya8u0uq37v"
-path="res://.godot/imported/Plant1_Run_full.png-a3297a676cf7aec7e22984f8647ba4f8.ctex"
+uid="uid://dnohtcf6dflg1"
+path="res://.godot/imported/Archer-Green.png-54a7faa0c0d94ff1cae9a52960b37554.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Plant1/Run/Plant1_Run_full.png"
-dest_files=["res://.godot/imported/Plant1_Run_full.png-a3297a676cf7aec7e22984f8647ba4f8.ctex"]
+source_file="res://assets/characters/Archer-Green.png"
+dest_files=["res://.godot/imported/Archer-Green.png-54a7faa0c0d94ff1cae9a52960b37554.ctex"]
 
 [params]
 

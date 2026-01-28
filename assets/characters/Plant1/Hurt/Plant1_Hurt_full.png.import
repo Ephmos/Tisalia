@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8msw1soxc10v"
-path="res://.godot/imported/Plant1_Hurt_full.png-934a97938f8548b9d63d90232c6a54ed.ctex"
+path="res://.godot/imported/Plant1_Hurt_full.png-25082ba2b9d6ee535e51143239b4b9a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Plant1/Hurt/Plant1_Hurt_full.png"
-dest_files=["res://.godot/imported/Plant1_Hurt_full.png-934a97938f8548b9d63d90232c6a54ed.ctex"]
+source_file="res://assets/characters/Plant1/Hurt/Plant1_Hurt_full.png"
+dest_files=["res://.godot/imported/Plant1_Hurt_full.png-25082ba2b9d6ee535e51143239b4b9a9.ctex"]
 
 [params]
 

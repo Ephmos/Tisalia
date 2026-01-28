@@ -1,7 +1,7 @@
 [gd_scene load_steps=34 format=3 uid="uid://d4aslu28llw60"]
 
 [ext_resource type="Script" uid="uid://cigh640uw2jmn" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://c5f283kms5hg7" path="res://art/character/Human-Soldier-Red.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://cruewgx20t3dg" path="res://assets/characters/Human-Soldier-Red.png" id="2_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(21, 15)
@@ -276,5 +276,5 @@ shape = SubResource("RectangleShape2D_g2els")
 y_sort_enabled = true
 scale = Vector2(1.9057621, 2.040527)
 sprite_frames = SubResource("SpriteFrames_487ah")
-animation = &"side_Idle"
+animation = &"front_walk"
 offset = Vector2(0, -15)

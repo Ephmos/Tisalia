@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db4wf68qn10ht"
-path="res://.godot/imported/Plant1_Death_full.png-f8bfc0e74d55580e41d719a509071354.ctex"
+path="res://.godot/imported/Plant1_Death_full.png-fe59421dd3c3772f334a08e2ccb3295d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Plant1/Death/Plant1_Death_full.png"
-dest_files=["res://.godot/imported/Plant1_Death_full.png-f8bfc0e74d55580e41d719a509071354.ctex"]
+source_file="res://assets/characters/Plant1/Death/Plant1_Death_full.png"
+dest_files=["res://.godot/imported/Plant1_Death_full.png-fe59421dd3c3772f334a08e2ccb3295d.ctex"]
 
 [params]
 

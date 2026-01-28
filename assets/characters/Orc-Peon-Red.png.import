@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byoya8u0uq37v"
-path="res://.godot/imported/Plant1_Run_full.png-a3297a676cf7aec7e22984f8647ba4f8.ctex"
+uid="uid://d1vofrejxgn4j"
+path="res://.godot/imported/Orc-Peon-Red.png-fcf2a79b3286c7022ac4232d405b940c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Plant1/Run/Plant1_Run_full.png"
-dest_files=["res://.godot/imported/Plant1_Run_full.png-a3297a676cf7aec7e22984f8647ba4f8.ctex"]
+source_file="res://assets/characters/Orc-Peon-Red.png"
+dest_files=["res://.godot/imported/Orc-Peon-Red.png-fcf2a79b3286c7022ac4232d405b940c.ctex"]
 
 [params]
 
