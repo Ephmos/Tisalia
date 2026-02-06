@@ -1,7 +1,7 @@
-[gd_scene load_steps=34 format=3 uid="uid://d4aslu28llw60"]
+[gd_scene load_steps=35 format=3 uid="uid://d4aslu28llw60"]
 
 [ext_resource type="Script" uid="uid://cigh640uw2jmn" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://cruewgx20t3dg" path="res://assets/characters/Human-Soldier-Red.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://c5f283kms5hg7" path="res://art/character/Human-Soldier-Red.png" id="2_qhqgy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 size = Vector2(21, 15)
@@ -150,7 +150,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_smehm")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_ur7pv")
 }, {
 "duration": 1.0,
@@ -167,7 +167,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3v2ag")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_jej6c")
 }, {
 "duration": 1.0,
@@ -192,7 +192,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qfm1y")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_fulsm")
 }, {
 "duration": 1.0,
@@ -234,7 +234,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ujl30")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": SubResource("AtlasTexture_31cv2")
 }, {
 "duration": 1.0,
@@ -262,6 +262,9 @@ animations = [{
 "speed": 4.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
+radius = 30.0
+
 [node name="player" type="CharacterBody2D" groups=["player"]]
 y_sort_enabled = true
 collision_layer = 3
@@ -276,5 +279,35 @@ shape = SubResource("RectangleShape2D_g2els")
 y_sort_enabled = true
 scale = Vector2(1.9057621, 2.040527)
 sprite_frames = SubResource("SpriteFrames_487ah")
-animation = &"front_walk"
+animation = &"death"
+frame_progress = 0.07476346
 offset = Vector2(0, -15)
+
+[node name="player_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
+position = Vector2(-1, -33)
+shape = SubResource("CircleShape2D_g2els")
+
+[node name="enemy_dmg" type="Timer" parent="."]
+wait_time = 5.0
+
+[node name="death_anim_timer" type="Timer" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -34)
+zoom = Vector2(2, 2)
+limit_left = 2
+limit_top = 2
+limit_right = 1152
+limit_bottom = 638
+limit_smoothed = true
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
+[connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
+[connection signal="timeout" from="enemy_dmg" to="." method="_on_enemy_dmg_timeout"]
+[connection signal="timeout" from="death_anim_timer" to="." method="_on_death_anim_timer_timeout"]
