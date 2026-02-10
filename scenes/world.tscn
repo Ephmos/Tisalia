@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=4 uid="uid://gxdqtqklu3ya"]
+[gd_scene load_steps=16 format=4 uid="uid://gxdqtqklu3ya"]
 
 [ext_resource type="Texture2D" uid="uid://b1lxavp3vanur" path="res://art/tilesets/fila-1-columna-1.png" id="1_4wyf3"]
+[ext_resource type="Script" uid="uid://btlp25fypevgt" path="res://scenes/world.gd" id="1_i7141"]
 [ext_resource type="Texture2D" uid="uid://c1v1d5tegtgj4" path="res://art/tilesets/Dungeon forest.png" id="1_rwgxs"]
 [ext_resource type="Texture2D" uid="uid://bkp285ylfyjyk" path="res://art/tilesets/water.png" id="2_4wyf3"]
 [ext_resource type="Texture2D" uid="uid://clmvw28j5cjx6" path="res://art/tilesets/fila-2-columna-1.png" id="4_k0juu"]
@@ -12627,27 +12628,21 @@ texture = ExtResource("1_4wyf3")
 1:110/0/z_index = 2
 1:111/0 = 0
 1:111/0/z_index = 2
-1:111/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.13868618, 6.0328665, 8, 5.963524, 8, 8, -0.1228466, 8)
 1:112/0 = 0
 1:112/0/z_index = 2
 1:112/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 8, 6.31024, -8, 6.31024)
 1:113/0 = 0
-1:113/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:114/0 = 0
-1:114/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:115/0 = 0
-1:115/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:110/0 = 0
 2:110/0/z_index = 2
 2:110/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 0.21763039, 8, 8)
 2:111/0 = 0
 2:111/0/z_index = 2
-2:111/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 6.10221, 8, 5.963524, 8, 8, -8, 8)
 2:112/0 = 0
 2:112/0/z_index = 2
 2:112/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, 6.019449, 0.2456913, 5.5280666, -0.3685379, 8)
 2:113/0 = 0
-2:113/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:114/0 = 0
 2:114/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:115/0 = 0
@@ -12657,12 +12652,10 @@ texture = ExtResource("1_4wyf3")
 3:110/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 0.21763039, 8, 8)
 3:111/0 = 0
 3:111/0/z_index = 2
-3:111/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 6.10221, 8, 5.963524, 8, 8, -8, 8)
 3:112/0 = 0
 3:112/0/z_index = 2
 3:112/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, 6.019449, 0.2456913, 5.5280666, -0.3685379, 8)
 3:113/0 = 0
-3:113/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:114/0 = 0
 3:114/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:115/0 = 0
@@ -12671,16 +12664,12 @@ texture = ExtResource("1_4wyf3")
 4:110/0/z_index = 2
 4:111/0 = 0
 4:111/0/z_index = 2
-4:111/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 5.8966045, 0.06934357, 6.10221, 0.1228466, 8, -8, 8)
 4:112/0 = 0
 4:112/0/z_index = 2
 4:112/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, 6.019449, 0.2456913, 5.5280666, -0.3685379, 8)
 4:113/0 = 0
-4:113/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:114/0 = 0
-4:114/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:115/0 = 0
-4:115/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:104/0 = 0
 0:104/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:105/0 = 0
@@ -20417,8 +20406,12 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_4wyf3")
 sources/1 = SubResource("TileSetAtlasSource_i7141")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mrxx"]
+size = Vector2(39, 65)
+
 [node name="world" type="Node2D"]
 position = Vector2(-1, 0)
+script = ExtResource("1_i7141")
 
 [node name="TileMap" type="TileMapLayer" parent="."]
 y_sort_enabled = true
@@ -20431,7 +20424,21 @@ tile_map_data = PackedByteArray("AAAAACYAAAAAALEAAAAAACcAAAAAALIAAAABACYAAAABALI
 tile_set = SubResource("TileSet_k0juu")
 
 [node name="player" parent="." instance=ExtResource("5_71j4m")]
-position = Vector2(664, 369)
+position = Vector2(20, 329)
 
 [node name="enemy_Plant" parent="." instance=ExtResource("6_qfnet")]
 position = Vector2(734, 155)
+
+[node name="collisions" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(14, 0, 1088, 0, 1088, 640, 352, 640, 352, 488, 342, 480, 65, 480, 64, 544, 0, 544, 0, 327, -55, 326, -36, 262, 0, 267, 1, -16, -87, 102, -114, 233, -124, 453, -97, 574, -58, 695, 104, 710, 279, 729, 548, 733, 746, 715, 986, 712, 1178, 713, 1255, 655, 1215, 484, 1212, 352, 1229, 235, 1232, 66, 1190, -68, 968, -82, 705, -90, 514, -86, 287, -86, 42, -73, 12, -8)
+
+[node name="cliffside_transition_point" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cliffside_transition_point"]
+position = Vector2(-19.5, 294.5)
+shape = SubResource("RectangleShape2D_4mrxx")
+
+[connection signal="body_entered" from="cliffside_transition_point" to="." method="_on_cliffside_transition_point_body_entered"]
+[connection signal="body_exited" from="cliffside_transition_point" to="." method="_on_cliffside_transition_point_body_exited"]

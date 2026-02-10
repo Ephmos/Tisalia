@@ -225,7 +225,7 @@ radius = 81.394104
 radius = 15.297058
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ah076"]
-radius = 23.021729
+radius = 27.0
 
 [node name="enemy_Plant" type="CharacterBody2D"]
 script = ExtResource("1_ah076")
@@ -234,6 +234,8 @@ script = ExtResource("1_ah076")
 scale = Vector2(1.21875, 1.0473633)
 sprite_frames = SubResource("SpriteFrames_dcoym")
 animation = &"attack"
+frame = 6
+frame_progress = 1.0
 offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="."]

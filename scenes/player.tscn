@@ -294,13 +294,26 @@ wait_time = 5.0
 
 [node name="death_anim_timer" type="Timer" parent="."]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="world_camera" type="Camera2D" parent="."]
 position = Vector2(0, -34)
 zoom = Vector2(2, 2)
 limit_left = 2
 limit_top = 2
 limit_right = 1152
 limit_bottom = 638
+limit_smoothed = true
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="map_2_camera" type="Camera2D" parent="."]
+position = Vector2(0, -34)
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 1151
+limit_bottom = 736
 limit_smoothed = true
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
