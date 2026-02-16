@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=4 uid="uid://trr334mpug87"]
 
-[ext_resource type="Script" uid="uid://cagsdkqis6u21" path="res://scenes/map_2.gd" id="1_8i8ja"]
-[ext_resource type="Texture2D" uid="uid://b1lxavp3vanur" path="res://art/tilesets/fila-1-columna-1.png" id="1_t2xha"]
-[ext_resource type="Texture2D" uid="uid://clmvw28j5cjx6" path="res://art/tilesets/fila-2-columna-1.png" id="2_a7y6p"]
-[ext_resource type="Texture2D" uid="uid://8nlkpentkrc6" path="res://art/tilesets/Caves.png" id="3_a7y6p"]
+[ext_resource type="Script" uid="uid://cagsdkqis6u21" path="res://scripts/map_2.gd" id="1_8i8ja"]
+[ext_resource type="Texture2D" uid="uid://b1lxavp3vanur" path="res://assets/tilesets/fila-1-columna-1.png" id="1_t2xha"]
+[ext_resource type="Texture2D" uid="uid://clmvw28j5cjx6" path="res://assets/tilesets/fila-2-columna-1.png" id="2_a7y6p"]
+[ext_resource type="Texture2D" uid="uid://8nlkpentkrc6" path="res://assets/tilesets/Caves.png" id="3_a7y6p"]
 [ext_resource type="PackedScene" uid="uid://d4aslu28llw60" path="res://scenes/player.tscn" id="4_to447"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_to447"]
