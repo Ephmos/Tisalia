@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp1gfteahrjjd"
-path="res://.godot/imported/Plant2_Attack_body.png-73993929dc2de997c57de2885fafdb38.ctex"
+uid="uid://bjbbcvov4ou1x"
+path="res://.godot/imported/seasonal sample (summer).png-324dc770b0e55b42de08cec7fd1ef28b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Plant2/Attack/Plant2_Attack_body.png"
-dest_files=["res://.godot/imported/Plant2_Attack_body.png-73993929dc2de997c57de2885fafdb38.ctex"]
+source_file="res://assets/sprites/tiles/ManaForestDemoSummer/seasonal sample (summer).png"
+dest_files=["res://.godot/imported/seasonal sample (summer).png-324dc770b0e55b42de08cec7fd1ef28b.ctex"]
 
 [params]
 

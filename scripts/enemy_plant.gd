@@ -11,7 +11,6 @@ var is_dead = false
 var is_attacking = false
 var can_attack = true
 
-
 func _physics_process(_delta):
 	if is_dead:
 		return

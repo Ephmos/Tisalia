@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=4 uid="uid://gxdqtqklu3ya"]
 
-[ext_resource type="Texture2D" uid="uid://b1lxavp3vanur" path="res://art/tilesets/fila-1-columna-1.png" id="1_4wyf3"]
-[ext_resource type="Script" uid="uid://btlp25fypevgt" path="res://scenes/world.gd" id="1_i7141"]
-[ext_resource type="Texture2D" uid="uid://c1v1d5tegtgj4" path="res://art/tilesets/Dungeon forest.png" id="1_rwgxs"]
-[ext_resource type="Texture2D" uid="uid://bkp285ylfyjyk" path="res://art/tilesets/water.png" id="2_4wyf3"]
-[ext_resource type="Texture2D" uid="uid://clmvw28j5cjx6" path="res://art/tilesets/fila-2-columna-1.png" id="4_k0juu"]
+[ext_resource type="Texture2D" uid="uid://b1lxavp3vanur" path="res://assets/tilesets/fila-1-columna-1.png" id="1_4wyf3"]
+[ext_resource type="Script" uid="uid://btlp25fypevgt" path="res://scripts/world.gd" id="1_i7141"]
+[ext_resource type="Texture2D" uid="uid://c1v1d5tegtgj4" path="res://assets/tilesets/Dungeon forest.png" id="1_rwgxs"]
+[ext_resource type="Texture2D" uid="uid://bkp285ylfyjyk" path="res://assets/tilesets/water.png" id="2_4wyf3"]
+[ext_resource type="Texture2D" uid="uid://clmvw28j5cjx6" path="res://assets/tilesets/fila-2-columna-1.png" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://d4aslu28llw60" path="res://scenes/player.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://b2ownxc44b147" path="res://scenes/enemy_plant.tscn" id="6_qfnet"]
 

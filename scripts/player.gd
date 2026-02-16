@@ -128,6 +128,7 @@ func die():
 	print("Has muerto")
 	$AnimatedSprite2D.play("death")
 	$death_anim_timer.start()
+	get_tree().change_scene_to_file("res://scenes/menu_scene.tscn")
 	
 
 func _on_death_anim_timer_timeout():

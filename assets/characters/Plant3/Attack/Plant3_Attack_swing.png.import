@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2mgu2p0c1x18"
-path="res://.godot/imported/Plant3_Attack_swing.png-a7c346a2a77fab17d1fc40050beff303.ctex"
+path="res://.godot/imported/Plant3_Attack_swing.png-0eb9b7524c49862fe6eb2df486c033b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Plant3/Attack/Plant3_Attack_swing.png"
-dest_files=["res://.godot/imported/Plant3_Attack_swing.png-a7c346a2a77fab17d1fc40050beff303.ctex"]
+source_file="res://assets/characters/Plant3/Attack/Plant3_Attack_swing.png"
+dest_files=["res://.godot/imported/Plant3_Attack_swing.png-0eb9b7524c49862fe6eb2df486c033b9.ctex"]
 
 [params]
 

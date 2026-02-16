@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhv8dupkg7wfm"
-path="res://.godot/imported/Plant3_Attack_shadow.png-c3a02f7698c13baae42e0f0b5a22eabd.ctex"
+path="res://.godot/imported/Plant3_Attack_shadow.png-83e8d799a4307b0d020b8b446fd9e611.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Plant3/Attack/Plant3_Attack_shadow.png"
-dest_files=["res://.godot/imported/Plant3_Attack_shadow.png-c3a02f7698c13baae42e0f0b5a22eabd.ctex"]
+source_file="res://assets/characters/Plant3/Attack/Plant3_Attack_shadow.png"
+dest_files=["res://.godot/imported/Plant3_Attack_shadow.png-83e8d799a4307b0d020b8b446fd9e611.ctex"]
 
 [params]
 

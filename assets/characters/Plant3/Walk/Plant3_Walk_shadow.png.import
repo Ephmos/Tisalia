@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ber5rs82g0wwa"
-path="res://.godot/imported/Plant3_Walk_shadow.png-d7a0a8ca3db2e59a878e53986885a643.ctex"
+path="res://.godot/imported/Plant3_Walk_shadow.png-7d8f71312127888cce6d87947d47af98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Plant3/Walk/Plant3_Walk_shadow.png"
-dest_files=["res://.godot/imported/Plant3_Walk_shadow.png-d7a0a8ca3db2e59a878e53986885a643.ctex"]
+source_file="res://assets/characters/Plant3/Walk/Plant3_Walk_shadow.png"
+dest_files=["res://.godot/imported/Plant3_Walk_shadow.png-7d8f71312127888cce6d87947d47af98.ctex"]
 
 [params]
 

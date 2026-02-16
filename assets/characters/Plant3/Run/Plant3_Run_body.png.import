@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pegam612quql"
-path="res://.godot/imported/Plant3_Run_body.png-b3e8b7cc5894165725abc426bbf8659a.ctex"
+path="res://.godot/imported/Plant3_Run_body.png-068d0754e896fbe689e9cdb7c764a5f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Plant3/Run/Plant3_Run_body.png"
-dest_files=["res://.godot/imported/Plant3_Run_body.png-b3e8b7cc5894165725abc426bbf8659a.ctex"]
+source_file="res://assets/characters/Plant3/Run/Plant3_Run_body.png"
+dest_files=["res://.godot/imported/Plant3_Run_body.png-068d0754e896fbe689e9cdb7c764a5f4.ctex"]
 
 [params]
 
