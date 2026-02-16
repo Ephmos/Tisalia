@@ -27,3 +27,11 @@ func change_scene():
 		get_tree().change_scene_to_file("res://scenes/world.tscn")
 		global.current_scene = "world"
 		global.transition_scene = false
+
+
+func _on_predilection_cave_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_predilection_cave_body_exited(body: Node2D) -> void:
+	pass # Replace with function body.

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://danhhrfvxofqg"
-path="res://.godot/imported/Golem1_Death_head.png-3a7aa1ba37dcb8679665311a891eda89.ctex"
+path="res://.godot/imported/Golem1_Death_head.png-6ec15459a6239e597cf7e35bf61e4ab0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Golem1/Death/Golem1_Death_head.png"
-dest_files=["res://.godot/imported/Golem1_Death_head.png-3a7aa1ba37dcb8679665311a891eda89.ctex"]
+source_file="res://assets/characters/Golem1/Death/Golem1_Death_head.png"
+dest_files=["res://.godot/imported/Golem1_Death_head.png-6ec15459a6239e597cf7e35bf61e4ab0.ctex"]
 
 [params]
 

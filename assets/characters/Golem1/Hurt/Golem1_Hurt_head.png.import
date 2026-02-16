@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hyvsgvvmm8f4"
-path="res://.godot/imported/Golem1_Hurt_head.png-a228cb85b2c1d78d674575845006423d.ctex"
+path="res://.godot/imported/Golem1_Hurt_head.png-cf5c44e0c6e3777f628b79351b2ee3ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Golem1/Hurt/Golem1_Hurt_head.png"
-dest_files=["res://.godot/imported/Golem1_Hurt_head.png-a228cb85b2c1d78d674575845006423d.ctex"]
+source_file="res://assets/characters/Golem1/Hurt/Golem1_Hurt_head.png"
+dest_files=["res://.godot/imported/Golem1_Hurt_head.png-cf5c44e0c6e3777f628b79351b2ee3ec.ctex"]
 
 [params]
 

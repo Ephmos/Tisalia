@@ -1,10 +1,10 @@
 [gd_scene load_steps=36 format=3 uid="uid://b86o18qn4pmvs"]
 
-[ext_resource type="Script" uid="uid://dwgk2ui3vflyy" path="res://scenes/boss.gd" id="1_qr6tj"]
-[ext_resource type="Texture2D" uid="uid://bgritowi1c1m6" path="res://art/character/Golem1/Idle/Golem1_Idle_full.png" id="2_qr6tj"]
-[ext_resource type="Texture2D" uid="uid://bw813qqo66xr0" path="res://art/character/Golem1/Attack/Golem1_Attack_full.png" id="3_16us7"]
-[ext_resource type="Texture2D" uid="uid://ky8dx43j6d3e" path="res://art/character/Golem1/Death/Golem1_Death_full.png" id="4_idwny"]
-[ext_resource type="Texture2D" uid="uid://dkdc0ptftmhjl" path="res://art/character/Golem1/Walk/Golem1_Walk_full.png" id="5_vovur"]
+[ext_resource type="Script" path="res://scripts/boss.gd" id="1_qr6tj"]
+[ext_resource type="Texture2D" uid="uid://bgritowi1c1m6" path="res://assets/characters/Golem1/Idle/Golem1_Idle_full.png" id="2_qr6tj"]
+[ext_resource type="Texture2D" uid="uid://bw813qqo66xr0" path="res://assets/characters/Golem1/Attack/Golem1_Attack_full.png" id="3_16us7"]
+[ext_resource type="Texture2D" uid="uid://ky8dx43j6d3e" path="res://assets/characters/Golem1/Death/Golem1_Death_full.png" id="4_idwny"]
+[ext_resource type="Texture2D" uid="uid://dkdc0ptftmhjl" path="res://assets/characters/Golem1/Walk/Golem1_Walk_full.png" id="5_vovur"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_30ra2"]
 atlas = ExtResource("2_qr6tj")

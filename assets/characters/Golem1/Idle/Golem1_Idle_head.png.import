@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dny4g6x36vbfq"
-path="res://.godot/imported/Golem1_Idle_head.png-83a1f98d0c627420189671436cb27933.ctex"
+path="res://.godot/imported/Golem1_Idle_head.png-a96dbd368af3d751ee548fa0effad2e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Golem1/Idle/Golem1_Idle_head.png"
-dest_files=["res://.godot/imported/Golem1_Idle_head.png-83a1f98d0c627420189671436cb27933.ctex"]
+source_file="res://assets/characters/Golem1/Idle/Golem1_Idle_head.png"
+dest_files=["res://.godot/imported/Golem1_Idle_head.png-a96dbd368af3d751ee548fa0effad2e7.ctex"]
 
 [params]
 

@@ -36085,7 +36085,7 @@ sources/1 = SubResource("TileSetAtlasSource_exien")
 sources/2 = SubResource("TileSetAtlasSource_5w0ad")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uic66"]
-size = Vector2(61, 58)
+size = Vector2(38.5, 36)
 
 [node name="map2" type="Node2D"]
 script = ExtResource("1_8i8ja")
@@ -36107,11 +36107,19 @@ visible = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
 polygon = PackedVector2Array(4, -1, 96, 0, 1088, 0, 1093, 261, 1112, 271, 1138, 272, 1151, 260, 1213, 259, 1213, 322, 1152, 317, 1152, 344, 1115, 334, 1090, 349, 1089, 736, 31, 736, 32, 324, 0, 326, 0, 304, -2, 255, 0, -39, -207, 238, -186, 728, -19, 875, 333, 903, 790, 860, 1155, 858, 1339, 797, 1323, 544, 1278, 165, 1266, 26, 1115, -83, 825, -85, 528, -111, 92, -104, 17, -14)
 
+[node name="predilection_cave" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="predilection_cave"]
+position = Vector2(128, 105)
+shape = SubResource("RectangleShape2D_uic66")
+
 [node name="map_2_exitpoint" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="map_2_exitpoint"]
-position = Vector2(1181.5, 289)
+position = Vector2(1172, 289)
 shape = SubResource("RectangleShape2D_uic66")
 
+[connection signal="body_entered" from="predilection_cave" to="." method="_on_predilection_cave_body_entered"]
+[connection signal="body_exited" from="predilection_cave" to="." method="_on_predilection_cave_body_exited"]
 [connection signal="body_entered" from="map_2_exitpoint" to="." method="_on_map_2_exitpoint_body_entered"]
 [connection signal="body_exited" from="map_2_exitpoint" to="." method="_on_map_2_exitpoint_body_exited"]

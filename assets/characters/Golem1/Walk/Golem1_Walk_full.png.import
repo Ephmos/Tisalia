@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkdc0ptftmhjl"
-path="res://.godot/imported/Golem1_Walk_full.png-b86f3b6cbff6fe1fd6f02a8e9d665950.ctex"
+path="res://.godot/imported/Golem1_Walk_full.png-9c97af81e88b285a2c19387729d32ed9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/character/Golem1/Walk/Golem1_Walk_full.png"
-dest_files=["res://.godot/imported/Golem1_Walk_full.png-b86f3b6cbff6fe1fd6f02a8e9d665950.ctex"]
+source_file="res://assets/characters/Golem1/Walk/Golem1_Walk_full.png"
+dest_files=["res://.godot/imported/Golem1_Walk_full.png-9c97af81e88b285a2c19387729d32ed9.ctex"]
 
 [params]
 
