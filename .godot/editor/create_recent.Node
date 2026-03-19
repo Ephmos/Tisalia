@@ -1,0 +1,14 @@
+HBoxContainer
+TextureRect
+CollisionShape2D
+Area2D
+CharacterBody2D
+RigidBody2D
+Node
+Sprite2D
+AnimationPlayer
+Marker2D
+CPUParticles2D
+GPUParticles2D
+PointLight2D
+LightOccluder2D

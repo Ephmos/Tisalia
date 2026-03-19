@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://crgev3uk0td52"]
-
-[ext_resource type="AudioStream" uid="uid://c7v64e0ofiois" path="res://assets/audio/MenuTheme.wav" id="1_p76w3"]
-
-[node name="MenuMusic" type="AudioStreamPlayer"]
-stream = ExtResource("1_p76w3")
-volume_db = -2.0
-autoplay = true
-bus = &"Music"

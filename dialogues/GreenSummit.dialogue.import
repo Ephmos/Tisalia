@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cvp108v2vrfe7"
+path="res://.godot/imported/GreenSummit.dialogue-afb7afb67ec5392ed153e8cfba17db90.tres"
+
+[deps]
+
+source_file="res://dialogues/GreenSummit.dialogue"
+dest_files=["res://.godot/imported/GreenSummit.dialogue-afb7afb67ec5392ed153e8cfba17db90.tres"]
+
+[params]
+
+defaults=true

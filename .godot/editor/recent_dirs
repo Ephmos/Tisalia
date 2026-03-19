@@ -1,10 +1,5 @@
-res://scripts
-res://assets/characters
-res://assets/art
-res://assets
-res://others/resources
-C:/Users/Kevlar/Desktop
-res://assets/audio
-res://scenes
 res://
-res://scenes/sub
+res://dialogues/
+res://audio/
+res://sprites/
+res://scenarios/
