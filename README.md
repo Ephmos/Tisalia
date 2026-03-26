@@ -5,7 +5,7 @@ de la llamada a controlled_node
 
 
 Ejemplo de controlled_node:
-```
+```gdscript
 
 extends StateBase
 
@@ -17,7 +17,9 @@ func on_physics_process(_delta):
 		return
 
 	controlled_node.velocity = Vector2.ZERO
-	animations.play("Idle" + controlled_node.current_direction) #Aquí llamo a controlled_node, que en este caso es la referencia a Player.GD donde existe una variable utilizada para obtener la dirección actual almacenada en una variable referenciada en el padre.
+	animations.play("Idle" + controlled_node.current_direction) # Aquí llamo a controlled_node, 
+	# que en este caso es la referencia a Player.GD donde existe una variable utilizada para 
+	# obtener la dirección actual almacenada en una variable referenciada en el padre.
 
 func on_unhandled_input(_event):
 	if Input.is_action_just_pressed("Interact"):
