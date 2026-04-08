@@ -1,3 +1,4 @@
+TileMapLayer
 HBoxContainer
 TextureRect
 CollisionShape2D
@@ -11,4 +12,3 @@ Marker2D
 CPUParticles2D
 GPUParticles2D
 PointLight2D
-LightOccluder2D
