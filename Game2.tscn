@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c6x1aoeyeeuxq"]
+
+[ext_resource type="PackedScene" uid="uid://i1jw165xk22" path="res://scenarios/Forest.tscn" id="1_gkajd"]
+[ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="2_2kb65"]
+
+[node name="Game2" type="Node2D" unique_id=1377400981]
+
+[node name="Forest" parent="." unique_id=1857900011 instance=ExtResource("1_gkajd")]
+
+[node name="Player" parent="Forest" unique_id=1785731520 instance=ExtResource("2_2kb65")]
+position = Vector2(-163, -165)
