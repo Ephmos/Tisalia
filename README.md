@@ -43,7 +43,11 @@ func on_input(_event):
 		return
 ```
 
-Básicamente, si vas a hacer referencia a información que está en el padre, utiliza controlled_node en un script de un estado (máquina de estados)
+> ***Básicamente, si vas a hacer referencia a información que está en el padre, utiliza controlled_node en un script de un estado (máquina de estados)***
+
+- A través de scripting con la máquina de estados hacemos que cada una de las funciones de las animaciones funcionen, el ejemplo de arriba simplemente es el cambio desde Idle (sin movimiento) a cualquier otra acción, todos los estados hacen lo mismo, aquí dejo un mapa conceptual de referencia para ejemplificar la máquina de estados:
+
+![alt text](docs/mindmap-states.png)
 
 ## Sobre las animaciones del jugador:
 
@@ -52,7 +56,3 @@ Básicamente, si vas a hacer referencia a información que está en el padre, ut
 - Las animaciones funcionan sobre un nodo AnimationPlayer, que permite realizar múltiples operaciones a la hora de ejecutar una única animación, para ejemplificar esto desglosaré una animación y sus diferentes opciones ligadas, por ejemplo la de atacar, nuestro ataque se realiza en las 4 direcciones (arriba, abajo, izquierda y derecha), adjunto captura a continuación: 
 
 ![alt text](docs/attdown-ap-ex.png)
-
-- A través de scripting con la máquina de estados hacemos que cada una de las funciones de las animaciones funcionen, el ejemplo de arriba simplemente es el cambio desde Idle (sin movimiento) a cualquier otra acción, todos los estados hacen lo mismo, aquí dejo un mapa conceptual de referencia para ejemplificar la máquina de estados:
-
-![alt text](docs/mindmap-states.png)
