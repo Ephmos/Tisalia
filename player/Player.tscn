@@ -732,6 +732,7 @@ script = ExtResource("1_kpjcp")
 texture = ExtResource("1_xhfnw")
 hframes = 9
 vframes = 12
+frame = 72
 
 [node name="Collision" type="CollisionShape2D" parent="." unique_id=1635266208]
 position = Vector2(0, 1)
@@ -777,7 +778,6 @@ position = Vector2(0, 15)
 shape = SubResource("CircleShape2D_gskgj")
 
 [node name="SwordHitbox" type="Area2D" parent="." unique_id=107005806]
-rotation = 4.712389
 script = ExtResource("8_06mnu")
 
 [node name="SwordCollision" type="CollisionShape2D" parent="SwordHitbox" unique_id=546021951]
