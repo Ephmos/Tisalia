@@ -1,3 +1,6 @@
-res://scenarios/Forest.tscn
 res://scenarios/GreenSummit.tres
 res://scenarios/Forest.tres
+res://player/Player.gd
+res://Game.gd
+res://Game.tscn
+res://life.gd
