@@ -56,3 +56,11 @@ func on_input(_event):
 - Las animaciones funcionan sobre un nodo AnimationPlayer, que permite realizar múltiples operaciones a la hora de ejecutar una única animación, para ejemplificar esto desglosaré una animación y sus diferentes opciones ligadas, por ejemplo la de atacar, nuestro ataque se realiza en las 4 direcciones (arriba, abajo, izquierda y derecha), adjunto captura a continuación: 
 
 ![alt text](docs/attdown-ap-ex.png)
+
+## Aclaraciones sobre la cámara:
+
+<span style="color:red">Durante las primeras fases del desarrollo, la cámara de Godot Engine presentó algunos problemas relacionados con el renderizado pixel perfect, especialmente en lo que respecta a la estabilidad visual y pequeños desplazamientos indeseados.
+
+Tras realizar una serie de ajustes y configuraciones específicas, el comportamiento de la cámara ha sido estabilizado y, en condiciones normales, actualmente no presenta errores visibles.
+
+No obstante, dado que este tipo de implementación puede variar dependiendo del dispositivo, resolución o configuración gráfica, si detectas cualquier problema visual (vibraciones, desenfoque, desalineación de píxeles, etc.) durante la ejecución del juego, agradecería que lo reportaras para poder revisarlo y corregirlo.</span>

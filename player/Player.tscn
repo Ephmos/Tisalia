@@ -767,6 +767,7 @@ script = ExtResource("6_aqcbf")
 animations = NodePath("../../Animations")
 
 [node name="ActionableDirection" type="Marker2D" parent="." unique_id=771939998]
+rotation = 3.1415927
 gizmo_extents = 0.0
 
 [node name="ActionableFinder" type="Area2D" parent="ActionableDirection" unique_id=87100155]
@@ -778,6 +779,7 @@ position = Vector2(0, 15)
 shape = SubResource("CircleShape2D_gskgj")
 
 [node name="SwordHitbox" type="Area2D" parent="." unique_id=107005806]
+rotation = 3.1415927
 script = ExtResource("8_06mnu")
 
 [node name="SwordCollision" type="CollisionShape2D" parent="SwordHitbox" unique_id=546021951]

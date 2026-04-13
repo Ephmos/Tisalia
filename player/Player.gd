@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+# Implementado por David Kallimoulline y Javier Jaén
+# 12/04/2026 - Se debe separar en diferentes scripts y sumar funcionalidad, por ahora se mantiene así con propósitos
+# funcionales, no modificar hasta haber realizado la primera 2da entrega
 @export_enum("Up", "Down", "Left", "Right")
 var current_direction: String = "Down"
 var alive : bool = true
