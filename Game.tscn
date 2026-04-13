@@ -4,15 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="1_wbfu4"]
 [ext_resource type="PackedScene" uid="uid://b24dfwwjfh3np" path="res://scenarios/GreenSummit.tscn" id="2_xkndl"]
 [ext_resource type="PackedScene" uid="uid://bn3je1ojj7lnu" path="res://adaon/Adaon.tscn" id="3_u44n3"]
-[ext_resource type="Script" uid="uid://comcq6w75wor7" path="res://life.gd" id="5_t88pq"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r0x5m"]
-load_path = "res://.godot/imported/HeartSprite1.png-8a0cc27f37d5653be06ed59b6db807e0.ctex"
+[ext_resource type="PackedScene" uid="uid://c8j3xkhhtymcy" path="res://PauseMenu.tscn" id="6_3mrqo"]
+[ext_resource type="PackedScene" uid="uid://dqqtj42lu4lv8" path="res://player/HealthBar.tscn" id="6_r0x5m"]
 
 [node name="Game" type="Node2D" unique_id=174385177]
 script = ExtResource("1_sb48q")
 
 [node name="GreenSummit" parent="." unique_id=892663673 instance=ExtResource("2_xkndl")]
+position = Vector2(-62, 12)
 
 [node name="Adaon" parent="GreenSummit" unique_id=726014032 instance=ExtResource("3_u44n3")]
 z_index = 2
@@ -22,23 +21,8 @@ position = Vector2(299, -126)
 z_index = 2
 position = Vector2(299, -87)
 
-[node name="UI" type="CanvasLayer" parent="GreenSummit" unique_id=1485848926]
+[node name="HealthBar" parent="." unique_id=1085961724 instance=ExtResource("6_r0x5m")]
 
-[node name="Life" type="Control" parent="GreenSummit/UI" unique_id=431421230]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("5_t88pq")
+[node name="PauseMenu" type="CanvasLayer" parent="." unique_id=595901484]
 
-[node name="Hearts" type="TextureRect" parent="GreenSummit/UI/Life" unique_id=325437464]
-top_level = true
-layout_mode = 0
-offset_left = 86.0
-offset_top = -161.0
-offset_right = 246.0
-offset_bottom = -1.0
-scale = Vector2(0.25, 0.25)
-texture = SubResource("CompressedTexture2D_r0x5m")
-expand_mode = 2
-stretch_mode = 1
+[node name="PauseMenu" parent="PauseMenu" unique_id=1328895508 instance=ExtResource("6_3mrqo")]
