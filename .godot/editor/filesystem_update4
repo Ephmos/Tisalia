@@ -1,13 +1,4 @@
-res://Game.tscn
+res://scenarios/lamsbrook_2.tscn
 res://scenarios/GreenSummit.tres
-res://scenarios/Forest.tres
-res://scenarios/Forest.tscn
-res://player/Player.gd
-res://Game2.tscn
-res://player/Player.tscn
-res://scenarios/Lamsbrook.tscn
 res://scenarios/Lamsbrook.tres
-res://player/HealthBar.tscn
-res://PauseMenu.tscn
-res://Game.gd
-res://pause_menu.gd
+res://scenarios/Forest.tres
