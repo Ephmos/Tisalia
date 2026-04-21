@@ -5,6 +5,7 @@ con estados del jugador, como por ejemplo recibir daño, puedes crear otro estad
 de la llamada a controlled_node
 
 Ejemplo de controlled_node:
+
 ```gdscript
 
 extends StateBase
