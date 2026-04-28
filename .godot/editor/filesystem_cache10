@@ -1,5 +1,5 @@
 f098f8d3115d962055284dee314b4f89
-::res://::1777270164
+::res://::1777356735
 Documentación.md::TextFile::-1::1776756043::0::1::::<><><>0<>0<><>::
 Game.gd::GDScript::8821671199486550796::1775807171::0::1::::<>Node2D<><>0<>0<><>::
 Game.tscn::PackedScene::791930846036517367::1776082348::0::1::::<><><>0<>0<><>::uid://dxxjvu8hn7aim::::res://Game.gd<>uid://bydgq1bvyaibu::::res://player/Player.tscn<>uid://b24dfwwjfh3np::::res://scenarios/GreenSummit.tscn<>uid://bn3je1ojj7lnu::::res://adaon/Adaon.tscn<>uid://c8j3xkhhtymcy::::res://PauseMenu.tscn<>uid://dqqtj42lu4lv8::::res://player/HealthBar.tscn
@@ -109,10 +109,10 @@ PlayerSFX.gd::GDScript::3618415602722059406::1773923306::0::1::::<>AudioStreamPl
 PlayerStateAttack.gd::GDScript::7226613372098697858::1773923306::0::1::::<>StateBase<><>0<>0<><>::
 PlayerStateIdle.gd::GDScript::292492181317254551::1773923306::0::1::::<>StateBase<><>0<>0<><>::
 PlayerStateWalk.gd::GDScript::7726969585764302048::1773923306::0::1::::<>StateBase<><>0<>0<><>::
-::res://scenarios/::1777031327
+::res://scenarios/::1777279669
 Forest.tres::TileSet::1922616971392290933::1776667728::0::1::::<><><>0<>0<><>::uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png
 Forest.tscn::PackedScene::18110933117673041::1776256238::0::1::::<><><>0<>0<><>::uid://2nlhrbj0udn6::::res://scenarios/Forest.tres
-golem_boss_arena.tscn::PackedScene::2068712143650299060::1777031327::0::1::::<><><>0<>0<><>::uid://b0db8wj401evc::::res://sprites/MainLev2.0.png
+golem_boss_arena.tscn::PackedScene::2068712143650299060::1777279669::0::1::::<><><>0<>0<><>::uid://b0db8wj401evc::::res://sprites/MainLev2.0.png<>uid://chsq4o7fr1pu4::::res://sprites/RPGW_Caves_v2.1/decorative.png
 GreenSummit.tres::TileSet::3916358222963638663::1776667727::0::1::::<><><>0<>0<><>::uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png
 GreenSummit.tscn::PackedScene::4341578686650841569::1775551979::0::1::::<><><>0<>0<><>::uid://bv2d3281kxqsl::::res://scenarios/GreenSummit.tres<>uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png
 Lamsbrook.tres::TileSet::609265269612103366::1776667728::0::1::::<><><>0<>0<><>::uid://cs4au8xvvr380::::res://sprites/seasonal sample (spring).png<>uid://bvojj3um5futv::::res://sprites/simplified full timber.png<>uid://b2uybrce4bho::::res://sprites/cozy furnishings sampler.png<>uid://b0db8wj401evc::::res://sprites/MainLev2.0.png

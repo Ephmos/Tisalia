@@ -1,1 +1,5 @@
+res://plant/enemy_plant.tscn
+res://plant/enemy_plant.gd
 res://scenarios/golem_boss_arena.tscn
+res://player/Player.tscn
+res://scenarios/lamsbrook_2.tscn
