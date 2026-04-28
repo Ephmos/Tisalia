@@ -724,7 +724,7 @@ radius = 15.000001
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gskgj"]
 size = Vector2(35, 10)
 
-[node name="Player" type="CharacterBody2D" unique_id=1785731520]
+[node name="Player" type="CharacterBody2D" unique_id=1785731520 groups=["player"]]
 y_sort_enabled = true
 script = ExtResource("1_kpjcp")
 

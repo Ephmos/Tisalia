@@ -234,7 +234,7 @@ script = ExtResource("1_ah076")
 scale = Vector2(1.21875, 1.0473633)
 sprite_frames = SubResource("SpriteFrames_dcoym")
 animation = &"walk"
-frame_progress = 0.77658796
+frame_progress = 0.8260668
 offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="." unique_id=584988763]
