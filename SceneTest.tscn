@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bfsmqsxgbcws7"]
+
+[ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="1_34ld8"]
+[ext_resource type="PackedScene" uid="uid://8pdgh4y2qxos" path="res://plant/enemy_plant.tscn" id="2_yckhv"]
+
+[node name="SceneTest" type="Node2D" unique_id=225578752]
+
+[node name="Player" parent="." unique_id=1785731520 instance=ExtResource("1_34ld8")]
+position = Vector2(155, 105)
+
+[node name="enemy_Plant" parent="." unique_id=1917947793 instance=ExtResource("2_yckhv")]
+position = Vector2(254, 115)

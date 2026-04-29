@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="1_wbfu4"]
 [ext_resource type="PackedScene" uid="uid://b24dfwwjfh3np" path="res://scenarios/GreenSummit.tscn" id="2_xkndl"]
 [ext_resource type="PackedScene" uid="uid://bn3je1ojj7lnu" path="res://adaon/Adaon.tscn" id="3_u44n3"]
+[ext_resource type="PackedScene" uid="uid://8pdgh4y2qxos" path="res://plant/enemy_plant.tscn" id="5_3mrqo"]
 [ext_resource type="PackedScene" uid="uid://c8j3xkhhtymcy" path="res://PauseMenu.tscn" id="6_3mrqo"]
 [ext_resource type="PackedScene" uid="uid://dqqtj42lu4lv8" path="res://player/HealthBar.tscn" id="6_r0x5m"]
 
@@ -20,6 +21,8 @@ position = Vector2(299, -126)
 [node name="Player" parent="GreenSummit" unique_id=1785731520 instance=ExtResource("1_wbfu4")]
 z_index = 2
 position = Vector2(299, -87)
+
+[node name="enemy_Plant" parent="GreenSummit" unique_id=1917947793 instance=ExtResource("5_3mrqo")]
 
 [node name="HealthBar" parent="." unique_id=1085961724 instance=ExtResource("6_r0x5m")]
 
