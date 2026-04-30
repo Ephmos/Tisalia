@@ -8,7 +8,7 @@ extends CharacterBody2D
 
 # ESTADOS
 
-var health: int
+var current_health: int
 var chase: bool = false
 var player: Node2D = null
 var player_in_attack_zone: bool = false
@@ -16,15 +16,21 @@ var can_take_damage: bool = true
 var is_dead: bool = false
 var is_attacking: bool = false
 var can_attack: bool = true
+var current_suffix: String = "down"
+var is_hurt: bool = false
 
 # MAIN
 
 func _ready() -> void:
-	health = max_health
-	print("[PLANT] Inicializada. HP: ", health)
+	current_health = max_health
+	print("[PLANT] Inicializada. HP: ", current_health)
 
 func _physics_process(_delta: float) -> void:
 	if is_dead:
+		return
+		
+	if is_hurt:
+		velocity = Vector2.ZERO
 		return
 
 	if is_attacking:
@@ -32,18 +38,30 @@ func _physics_process(_delta: float) -> void:
 		return
 
 	if chase and player:
+		_update_direction_suffix()
 		_move_towards_player()
 	else:
-		$AnimatedSprite2D.play("Idle")
+		velocity = Vector2.ZERO
+		$AnimatedSprite2D.play("idle_" + current_suffix)
 
 	if player_in_attack_zone:
 		attack()
 
 func _move_towards_player() -> void:
 	position += (player.position - position) / speed
-	move_and_collide(Vector2.ZERO)
-	$AnimatedSprite2D.play("walk")
-	$AnimatedSprite2D.flip_h = (player.position.x - position.x) < 0
+	move_and_slide()
+	$AnimatedSprite2D.play("walk_" + current_suffix)
+
+# DIRECCIÓN
+
+func _update_direction_suffix() -> void:
+	if player == null:
+		return
+	var diff = player.position - position
+	if abs(diff.y) > abs(diff.x):
+		current_suffix = "down" if diff.y > 0 else "up"
+	else:
+		current_suffix = "left" if diff.x < 0 else "right"
 
 # AGGRO PLAYER
 
@@ -80,7 +98,7 @@ func attack() -> void:
 	is_attacking = true
 	can_attack = false
 	velocity = Vector2.ZERO
-	$AnimatedSprite2D.play("attack")
+	$AnimatedSprite2D.play("attack_" + current_suffix)
 	$deal_dmg.start()
 
 func _on_deal_dmg_timeout() -> void:
@@ -96,29 +114,37 @@ func _deal_damage_to_player(damage: int) -> void:
 		player.take_damage(damage)
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-	if $AnimatedSprite2D.animation == "attack":
+	if $AnimatedSprite2D.animation.begins_with("attack_"):
+		_resume_animation()
+	elif $AnimatedSprite2D.animation.begins_with("hurt_"):
+		is_hurt = false
 		_resume_animation()
 
 func _resume_animation() -> void:
 	if chase:
-		$AnimatedSprite2D.play("walk")
+		$AnimatedSprite2D.play("walk_" + current_suffix)
 	else:
-		$AnimatedSprite2D.play("Idle")
+		$AnimatedSprite2D.play("idle_" + current_suffix)
 
 # RECIBIR DAÑO (jugador → enemigo)═
 
 func take_damage(damage: int) -> void:
 	if is_dead or not can_take_damage:
 		return
-	health = max(health - damage, 0)
+	current_health = max(current_health - damage, 0)
 	can_take_damage = false
+	is_hurt = true
 	$take_damage_cooldown.start()
-	print("[PLANT] Recibe daño: -", damage, " | HP restante: ", health)
-	if health <= 0:
+	$AnimatedSprite2D.play("hurt_" + current_suffix)
+	print("[PLANT] Recibe daño: -", damage, " | HP restante: ", current_health)
+	if current_health <= 0:
 		die()
 
 func _on_take_damage_cooldown_timeout() -> void:
 	can_take_damage = true
+	if is_hurt:
+		is_hurt = false
+		_resume_animation()
 
 # DEATH
 
@@ -132,4 +158,3 @@ func die() -> void:
 
 func _on_death_anim_timer_timeout() -> void:
 	queue_free()
-	

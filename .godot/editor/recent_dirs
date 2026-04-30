@@ -1,8 +1,10 @@
-res://plant/
+res://sprites/Plantas/Plant3/Hurt/
+res://sprites/Plantas/Plant3/Run/
 res://sprites/Plantas/Plant3/Walk/
-res://sprites/Plantas/Plant3/Death/
 res://sprites/Plantas/Plant3/Attack/
 res://sprites/Plantas/Plant3/Idle/
+res://plant/
+res://sprites/Plantas/Plant3/Death/
 res://scenarios/
 res://sprites/
 res://

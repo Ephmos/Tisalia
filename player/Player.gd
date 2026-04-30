@@ -29,6 +29,8 @@ func _ready() -> void:
 		hearts.append(child)
 
 func _process(_delta: float) -> void:
+	if !alive:
+		return
 	if Input.is_action_just_pressed("Test"):
 		take_damage()
 		#
