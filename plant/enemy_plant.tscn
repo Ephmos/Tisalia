@@ -225,10 +225,11 @@ radius = 81.394104
 radius = 15.297058
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ah076"]
-radius = 27.0
+radius = 32.01562
 
 [node name="enemy_Plant" type="CharacterBody2D" unique_id=1917947793]
 script = ExtResource("1_ah076")
+attack_damage = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1101449581]
 scale = Vector2(1.21875, 1.0473633)
@@ -239,23 +240,20 @@ offset = Vector2(0, -6)
 
 [node name="detection_area" type="Area2D" parent="." unique_id=584988763]
 position = Vector2(37, 37)
-collision_layer = 2
-collision_mask = 2
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area" unique_id=241591702]
-visible = false
 position = Vector2(-39, -37)
 shape = SubResource("CircleShape2D_trv5a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2075717794 groups=["player"]]
-visible = false
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_p618g")
 
 [node name="enemy_plant_hitbox" type="Area2D" parent="." unique_id=805615552]
+collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_plant_hitbox" unique_id=397485172]
-visible = false
 position = Vector2(0, -6)
 shape = SubResource("CircleShape2D_ah076")
 

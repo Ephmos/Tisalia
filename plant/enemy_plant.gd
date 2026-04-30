@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 # STATS
 
-@export var speed: float = 40.0
+@export var speed: float = 120.0
 @export var max_health: int = 100
 @export var attack_damage: int = 20
 
@@ -21,6 +21,7 @@ var can_attack: bool = true
 
 func _ready() -> void:
 	health = max_health
+	print("[PLANT] Inicializada. HP: ", health)
 
 func _physics_process(_delta: float) -> void:
 	if is_dead:
@@ -47,18 +48,23 @@ func _move_towards_player() -> void:
 # AGGRO PLAYER
 
 func _on_detection_area_body_entered(body: Node2D) -> void:
+	print("[PLANT] detection_area body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player = body
 		chase = true
+		print("[PLANT] Chase activado")
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
+	print("[PLANT] detection_area body_exited: ", body.name)
 	if body.is_in_group("player"):
 		player = null
 		chase = false
+		print("[PLANT] Chase desactivado")
 
 # HITBOX DE ATAQUE (enemigo → jugador)
 
 func _on_enemy_plant_hitbox_body_entered(body: Node2D) -> void:
+	print("[PLANT] hitbox body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player_in_attack_zone = true
 
@@ -86,6 +92,7 @@ func _on_deal_dmg_timeout() -> void:
 
 func _deal_damage_to_player(damage: int) -> void:
 	if player and player.has_method("take_damage"):
+		print("[PLANT] Atacando al jugador. Daño: ", damage)
 		player.take_damage(damage)
 
 func _on_animated_sprite_2d_animation_finished() -> void:
@@ -105,7 +112,8 @@ func take_damage(damage: int) -> void:
 		return
 	health = max(health - damage, 0)
 	can_take_damage = false
-	$take_damage_cooldo.start()
+	$take_damage_cooldown.start()
+	print("[PLANT] Recibe daño: -", damage, " | HP restante: ", health)
 	if health <= 0:
 		die()
 
@@ -124,3 +132,4 @@ func die() -> void:
 
 func _on_death_anim_timer_timeout() -> void:
 	queue_free()
+	

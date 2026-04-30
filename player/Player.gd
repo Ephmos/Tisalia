@@ -18,16 +18,20 @@ var hearts: Array[TextureRect]
 
 # MAIN
 
+@export var hearts_parent: Node
+
 func _ready() -> void:
-	var hearts_parent = $"../../HealthBar/HBoxContainer"
+	$SwordHitbox.monitoring = false
+	if hearts_parent == null:
+		push_warning("Player: hearts_parent no asignado en el Inspector")
+		return
 	for child in hearts_parent.get_children():
 		hearts.append(child)
-			
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Test"):
 		take_damage()
-		
+		#
 	if Input.is_action_just_pressed("Test2"):
 		heal()
 
@@ -48,9 +52,12 @@ func take_damage(amount: int = 1) -> void:
 	if not alive:
 		return
 	health = max(health - amount, 0)
+	print("[PLAYER] Recibe daño: -", amount, " | HP restante: ", health)
 	update_heart_display()
 	if health <= 0:
 		alive = false
+		print("[PLAYER] Muerto")
+		queue_free()
 		#trigger animación de muerte del jugador
 		#(creo que mejor aqui)
 
@@ -60,6 +67,7 @@ func heal(amount: int = 1) -> void:
 	if not alive:
 		return
 	health = min(health + amount, max_health)
+	print("[PLAYER] Curado: +", amount, " | HP actual: ", health)
 	update_heart_display()
 
 func update_heart_display() -> void:

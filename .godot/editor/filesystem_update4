@@ -1,5 +1,7 @@
-res://README.md
-res://player/Player.gd
-res://scenarios/GreenSummit.tres
 res://SceneTest.tscn
-res://Game.tscn
+res://scenarios/GreenSummit.tres
+res://player/Player.gd
+res://plant/enemy_plant.tscn
+res://plant/enemy_plant.gd
+res://player/Attack.gd
+res://player/Player.tscn
