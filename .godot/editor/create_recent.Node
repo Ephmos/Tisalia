@@ -1,6 +1,8 @@
 CollisionShape2D
 Area2D
 AnimatedSprite2D
+Marker2D
+Timer
 CharacterBody2D
 TileMapLayer
 CanvasLayer
@@ -10,5 +12,3 @@ Label
 VBoxContainer
 Panel
 TextureRect
-HBoxContainer
-Container

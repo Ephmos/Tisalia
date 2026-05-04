@@ -1,3 +1,7 @@
 res://scenarios/GreenSummit.tres
 res://totems/enemy/enemy_totem.tscn
 res://plant/enemy_plant.tscn
+res://vampire/enemy_vampire.tscn
+res://vampire/bullet.tscn
+res://vampire/bullet.gd
+res://vampire/enemy_vampire.gd

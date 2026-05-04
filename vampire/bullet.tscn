@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://csb0nhl4475g7"]
+
+[ext_resource type="Script" uid="uid://dhn2wdt0ux538" path="res://vampire/bullet.gd" id="1_rgesb"]
+
+[node name="Bullet" type="Area2D" unique_id=535627295]
+script = ExtResource("1_rgesb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1737784650]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=10838365]
