@@ -1,4 +1,7 @@
 res://vampire/
+res://sprites/
+res://sprites/vampire/Vampires3/Hurt/
+res://sprites/vampire/Vampires3/Death/
 res://sprites/vampire/Vampires3/Attack/
 res://sprites/vampire/Vampires3/Walk/
 res://sprites/vampire/Vampires3/Idle/
@@ -11,7 +14,6 @@ res://sprites/Plantas/Plant3/Idle/
 res://plant/
 res://sprites/Plantas/Plant3/Death/
 res://scenarios/
-res://sprites/
 res://
 res://dialogues/
 res://audio/

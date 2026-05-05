@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var max_health: int = 60
 @export var bullet_damage: int = 1
 @export var bullet_speed: float = 200.0
-@export var bullet_scene: PackedScene 
+@export var bullet_scene: PackedScene
 
 # ESTADOS
 
@@ -52,10 +52,9 @@ func _update_direction_suffix() -> void:
 # AGGRO PLAYER
 
 func _on_detection_area_body_entered(body: Node2D) -> void:
-	print("[VAMPIRE] detection_area body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player = body
-		print("[VAMPIRE] Jugador detectado, empezando a disparar")
+		_update_direction_suffix() 
 		_try_shoot()
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
@@ -70,7 +69,8 @@ func _try_shoot() -> void:
 	if player == null or is_dead or is_hurt or not can_shoot:
 		return
 	can_shoot = false
-	$AnimatedSprite2D.play("attack_" + current_suffix)
+	_shoot()
+	$attack_cooldown.start()
 
 func _shoot() -> void:
 	if player == null or bullet_scene == null:
@@ -84,16 +84,12 @@ func _shoot() -> void:
 	print("[VAMPIRE] Disparo lanzado")
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-	if $AnimatedSprite2D.animation.begins_with("attack_"):
-		_shoot()
-		$attack_cooldown.start()
-	elif $AnimatedSprite2D.animation.begins_with("hurt_"):
-		is_hurt = false
-		_resume_animation()
+		if $AnimatedSprite2D.animation.begins_with("hurt_"):
+			is_hurt = false
+			_resume_animation()
 
 func _on_attack_cooldown_timeout() -> void:
 	can_shoot = true
-	# Si el jugador sigue en rango, volver a disparar
 	_try_shoot()
 
 func _resume_animation() -> void:
@@ -106,9 +102,10 @@ func take_damage(damage: int) -> void:
 		return
 	current_health = max(current_health - damage, 0)
 	can_take_damage = false
-	is_hurt = true
 	$take_damage_cooldown.start()
-	$AnimatedSprite2D.play("hurt_" + current_suffix)
+	if $AnimatedSprite2D.sprite_frames.has_animation("hurt_" + current_suffix):
+		is_hurt = true
+		$AnimatedSprite2D.play("hurt_" + current_suffix)
 	print("[VAMPIRE] Recibe daño: -", damage, " | HP restante: ", current_health)
 	if current_health <= 0:
 		die()
@@ -128,5 +125,7 @@ func die() -> void:
 	velocity = Vector2.ZERO
 	print("[VAMPIRE] Muerto")
 	$AnimatedSprite2D.play("death")
-	await $AnimatedSprite2D.animation_finished
+	$death_anim_timer.start()
+
+func _on_death_anim_timer_timeout() -> void:
 	queue_free()
