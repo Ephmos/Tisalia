@@ -1,5 +1,9 @@
 f098f8d3115d962055284dee314b4f89
+<<<<<<< Updated upstream
 ::res://::1777972644
+=======
+::res://::1777930882
+>>>>>>> Stashed changes
 Documentación.md::TextFile::-1::1776755675::0::1::::<><><>0<>0<><>::
 Game.gd::GDScript::8821671199486550796::1776080647::0::1::::<>Node2D<><>0<>0<><>::
 Game.tscn::PackedScene::791930846036517367::1777449375::0::1::::<><><>0<>0<><>::uid://dxxjvu8hn7aim::::res://Game.gd<>uid://bydgq1bvyaibu::::res://player/Player.tscn<>uid://b24dfwwjfh3np::::res://scenarios/GreenSummit.tscn<>uid://bn3je1ojj7lnu::::res://adaon/Adaon.tscn<>uid://8pdgh4y2qxos::::res://plant/enemy_plant.tscn<>uid://c8j3xkhhtymcy::::res://PauseMenu.tscn<>uid://dqqtj42lu4lv8::::res://player/HealthBar.tscn
