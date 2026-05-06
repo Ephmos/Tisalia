@@ -1,3 +1,9 @@
+res://sprites/Golem1/Attack/
+res://sprites/Golem1/Hurt/
+res://sprites/Golem1/Walk/
+res://sprites/Golem1/Idle/
+res://BOSS/
+res://sprites/Golem1/Death/
 res://vampire/
 res://sprites/
 res://sprites/vampire/Vampires3/Hurt/
@@ -14,6 +20,3 @@ res://sprites/Plantas/Plant3/Idle/
 res://plant/
 res://sprites/Plantas/Plant3/Death/
 res://scenarios/
-res://
-res://dialogues/
-res://audio/

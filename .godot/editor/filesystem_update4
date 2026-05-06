@@ -1,3 +1,6 @@
 res://vampire/bullet.gd
 res://vampire/bullet.tscn
 res://scenarios/GreenSummit.tres
+res://BOSS/BOSS.tscn
+res://BOSS/boss.gd
+res://SceneTest2.tscn
