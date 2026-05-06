@@ -139,7 +139,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7432j"]
-radius = 53.235325
+radius = 7.071068
 
 [node name="Bullet" type="Area2D" unique_id=535627295]
 script = ExtResource("1_rgesb")
@@ -152,5 +152,6 @@ frame = 1
 frame_progress = 0.843065
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=10838365]
-visible = false
 shape = SubResource("CircleShape2D_7432j")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
