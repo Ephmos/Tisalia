@@ -12,6 +12,7 @@ extends CharacterBody2D
 var current_health: int
 var player: Node2D = null
 var can_shoot: bool = true
+var is_shooting: bool = false
 var can_take_damage: bool = true
 var is_dead: bool = false
 var is_hurt: bool = false
@@ -21,13 +22,15 @@ var current_suffix: String = "down"
 
 func _ready() -> void:
 	current_health = max_health
+	$HealthBar/Bar.max_value = max_health
+	$HealthBar/Bar.value = current_health
 	print("[VAMPIRE] Inicializado. HP: ", current_health)
 
 func _physics_process(_delta: float) -> void:
 	if is_dead:
 		return
 
-	if is_hurt:
+	if is_hurt or is_shooting:   
 		velocity = Vector2.ZERO
 		return
 
@@ -69,7 +72,8 @@ func _try_shoot() -> void:
 	if player == null or is_dead or is_hurt or not can_shoot:
 		return
 	can_shoot = false
-	_shoot()
+	is_shooting = true
+	$AnimatedSprite2D.play("attack_" + current_suffix)
 	$attack_cooldown.start()
 
 func _shoot() -> void:
@@ -84,9 +88,13 @@ func _shoot() -> void:
 	print("[VAMPIRE] Disparo lanzado")
 
 func _on_animated_sprite_2d_animation_finished() -> void:
-		if $AnimatedSprite2D.animation.begins_with("hurt_"):
-			is_hurt = false
-			_resume_animation()
+	if $AnimatedSprite2D.animation.begins_with("attack_"):
+		is_shooting = false
+		_shoot()
+		$attack_cooldown.start()
+	elif $AnimatedSprite2D.animation.begins_with("hurt_"):
+		is_hurt = false
+		_resume_animation()
 
 func _on_attack_cooldown_timeout() -> void:
 	can_shoot = true
@@ -101,6 +109,7 @@ func take_damage(damage: int) -> void:
 	if is_dead or not can_take_damage:
 		return
 	current_health = max(current_health - damage, 0)
+	$HealthBar/Bar.value = current_health
 	can_take_damage = false
 	$take_damage_cooldown.start()
 	if $AnimatedSprite2D.sprite_frames.has_animation("hurt_" + current_suffix):

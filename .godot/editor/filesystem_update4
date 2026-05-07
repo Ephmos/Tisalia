@@ -1,6 +1,4 @@
-res://vampire/bullet.gd
-res://vampire/bullet.tscn
+res://vampire/enemy_vampire.tscn
 res://scenarios/GreenSummit.tres
-res://BOSS/BOSS.tscn
-res://BOSS/boss.gd
+res://vampire/enemy_vampire.gd
 res://SceneTest2.tscn
