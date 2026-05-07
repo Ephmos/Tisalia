@@ -907,7 +907,7 @@ position = Vector2(3, -2)
 collision_layer = 0
 script = ExtResource("1_qr6tj")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1933336469]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1933336469 groups=["enemy"]]
 scale = Vector2(3, 2.577)
 sprite_frames = SubResource("SpriteFrames_dcoym")
 animation = &"attack_down"

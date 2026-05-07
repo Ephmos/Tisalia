@@ -930,7 +930,7 @@ visible = false
 position = Vector2(-1, 2)
 shape = SubResource("CircleShape2D_sgip2")
 
-[node name="attack_cooldown" type="Timer" parent="." unique_id=1621290739]
+[node name="attack_cooldown" type="Timer" parent="." unique_id=1621290739 groups=["enemy"]]
 
 [node name="take_damage_cooldown" type="Timer" parent="." unique_id=1950138460]
 
