@@ -1,10 +1,10 @@
-ProgressBar
-Node2D
+Timer
 CollisionShape2D
 Area2D
+ProgressBar
+Node2D
 AnimatedSprite2D
 Marker2D
-Timer
 CharacterBody2D
 TileMapLayer
 CanvasLayer
@@ -12,4 +12,3 @@ Control
 Button
 Label
 VBoxContainer
-Panel
