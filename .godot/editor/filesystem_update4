@@ -6,3 +6,4 @@ res://scenarios/golem_boss_arena.tscn
 res://scenarios/daño_piedra.gd
 res://BOSS/BOSS.tscn
 res://plant/enemy_plant.tscn
+res://BOSS/boss.gd
