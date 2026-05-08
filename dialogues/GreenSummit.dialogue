@@ -1,34 +1,32 @@
 ~ start
 
-if Game.first_quest_started == false && Game.first_quest_explanation == false
-	Adaon: Hola..., veo que te has despertado, has estado dormido un buen rato, ¿recuerdas por qué estás aquí?
+if !Game.first_quest_started
+	Adaon: Hola..., veo que te has despertado. Has estado dormido un buen rato. ¿Recuerdas por qué estás aquí?
 	- No.
-	Adaon: Yo tampoco sé por qué estás aquí, pero de todas formas quizás me seas útil.
-	Adaon: Soy Adaon, espeleólogo, me dedica a buscar gemas a lo largo de todo el mundo, he venido a esta Isla para recabar esmeraldas y hacer fortuna en Lamsbrook.
+	Adaon: Yo tampoco sé por qué estás aquí, pero quizás me seas útil.
+	Adaon: Soy Adaon, espeleólogo. Me dedico a buscar gemas por todo el mundo. He venido a esta isla para recabar esmeraldas y hacer fortuna en Lamsbrook.
 	- ¿Y eso qué tiene que ver conmigo?
-	Adaon: No hay forma de salir de esta Isla, salvo que nadases, que en ese caso, la corriente te arrastraría a una muerte segura ahogado, o de otra forma, a través de mi embarcación...
-	Adaon: Puedo llevarte a Lamsbrook, es una ciudad a unos cuantos días de aquí, pero necesito que me ayudes primero.
-	- Si no tengo más remedio...
+	Adaon: No hay forma de salir de esta isla... salvo que usemos mi embarcación.
+	Adaon: Puedo llevarte a Lamsbrook, pero necesito que me ayudes primero.
+
+	- Aceptar ayudarle.
 		set Game.first_quest_started = true
 		=> quest1
-	- No.
-		set Game.first_quest_explanation = true
-		Adaon: Adiós, si cambias de idea, vuelve para hablar conmigo.
-	=> END
-elif Game.first_quest_started == false && Game.first_quest_explanation == true
-	Adaon: ¿Me ayudarás entonces?
-	- Si no tengo más remedio...
-		set Game.first_quest_started = true
-		=> quest1
-	- No.
-		Adaon: Adiós, si cambias de idea, vuelve para hablar conmigo.
+
+	- Negarse.
+		Adaon: Adiós. Si cambias de idea, vuelve para hablar conmigo.
 		=> END
+
 else
 	Adaon: Sigo esperando a que encuentres a Hanks.
 	=> END
-	
+
+
 ~ quest1
-Adaon: Bien, en ese caso, necesito que encuentres a Hanks, es un mercenario al que he contratado, para que revisase la isla, para poder explorar tranquilamente sin preocupaciones...
-Adaon: Habla con él, y pregúntale qué información ha recabado acerca de la "Isla" y la "Cueva", cuando termines, vuelve con las noticias de Hanks, después, quizás vayamos a explorar.
+
+Adaon: Bien. Necesito que mates a algunas plantas aquí en la Isla, debido a que próximamente traeré a mi equipo para explorar mejor la Isla.
+Adaon: Necesito que mates a 3 flores desgarradoras en la Isla, una vez completes la tarea, viajaremos a Lamsbrook.
+Adaon: Cuando termines, vuelve a hablar conmigo.
+
 - Está bien, eso haré.
 => END
