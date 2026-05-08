@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b0db8wj401evc" path="res://sprites/MainLev2.0.png" id="1_5qnf3"]
 [ext_resource type="Texture2D" uid="uid://chsq4o7fr1pu4" path="res://sprites/RPGW_Caves_v2.1/decorative.png" id="2_gkowt"]
 [ext_resource type="Script" uid="uid://4xwybg1n6tcj" path="res://scenarios/daño_piedra.gd" id="3_x3wsw"]
-[ext_resource type="PackedScene" uid="uid://b86o18qn4pmvs" path="res://BOSS/BOSS.tscn" id="4_tawrw"]
+[ext_resource type="PackedScene" uid="uid://b86o18qn4pmvs" path="res://boss/boss.tscn" id="4_tawrw"]
 [ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="5_emr5r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gkowt"]
