@@ -794,7 +794,6 @@ shape = SubResource("RectangleShape2D_gskgj")
 position = Vector2(0, -20)
 
 [node name="Bar" type="ProgressBar" parent="HealthBar" unique_id=1440711736]
-anchors_preset = -1
 offset_left = -11.0
 offset_top = -5.0
 offset_right = 139.0
@@ -810,7 +809,6 @@ show_percentage = false
 position = Vector2(0, -23)
 
 [node name="Bar" type="ProgressBar" parent="XpBar" unique_id=674659171]
-anchors_preset = -1
 offset_left = -11.0
 offset_top = -5.0
 offset_right = 139.0

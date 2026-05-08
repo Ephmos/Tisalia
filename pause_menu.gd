@@ -17,7 +17,7 @@ func pause():
 	get_tree().paused = true
 	show()
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Pause") and !get_tree().paused:
 		pause()
 	elif Input.is_action_just_pressed("Pause") and get_tree().paused:

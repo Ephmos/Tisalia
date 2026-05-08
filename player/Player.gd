@@ -123,4 +123,4 @@ func _update_xp_bar() -> void:
 	$XpBar/Bar.max_value = xp_to_next_level
 	$XpBar/Bar.value = current_xp
 	if current_level >= max_level:
-		$XpBar/Bar.value = $XpBar/Bar.max_valueue
+		$XpBar/Bar.value = $XpBar/Bar.max_value

@@ -165,7 +165,10 @@ func _on_death_anim_timer_timeout() -> void:
 	queue_free()
 
 func _drop_xp() -> void:
-	player = get_tree().get_first_node_in_group("player")
+	# No suprimir por ahora
+	#player = get_tree().get_first_node_in_group("player")
+	#print(get_parent().get_node("Player"))
+	player = get_parent().get_node("Player")
 	if player:
 		player.gain_xp(xp_reward)
 		print("[PLANT] XP entregada al jugador: ", xp_reward)
