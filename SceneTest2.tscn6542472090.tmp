@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="1_6eda2"]
 [ext_resource type="PackedScene" uid="uid://c8mimtwi0ypu3" path="res://vampire/enemy_vampire.tscn" id="2_kq3il"]
 [ext_resource type="PackedScene" uid="uid://b86o18qn4pmvs" path="res://BOSS/BOSS.tscn" id="3_kq3il"]
-[ext_resource type="PackedScene" uid="uid://8pdgh4y2qxos" path="res://plant/enemy_plant.tscn" id="4_gskmc"]
 
 [node name="SceneTest2" type="Node2D" unique_id=2063520055]
 
@@ -14,7 +13,3 @@ position = Vector2(148, 3)
 
 [node name="BOSS" parent="." unique_id=399434919 instance=ExtResource("3_kq3il")]
 position = Vector2(-266, -119)
-
-[node name="enemy_Plant" parent="." unique_id=1917947793 instance=ExtResource("4_gskmc")]
-position = Vector2(-291, 157)
-attack_damage = 20

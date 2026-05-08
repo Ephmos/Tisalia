@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var speed: float = 120.0
 @export var max_health: int = 100
 @export var attack_damage: int = 20
+@export var xp_reward: int = 50
 
 # ESTADOS
 
@@ -23,6 +24,8 @@ var is_hurt: bool = false
 
 func _ready() -> void:
 	current_health = max_health
+	$HealthBar/Bar.max_value = max_health
+	$HealthBar/Bar.value = current_health
 	print("[PLANT] Inicializada. HP: ", current_health)
 
 func _physics_process(_delta: float) -> void:
@@ -132,6 +135,7 @@ func take_damage(damage: int) -> void:
 	if is_dead or not can_take_damage:
 		return
 	current_health = max(current_health - damage, 0)
+	$HealthBar/Bar.value = current_health
 	can_take_damage = false
 	is_hurt = true
 	$take_damage_cooldown.start()
@@ -153,8 +157,15 @@ func die() -> void:
 		return
 	is_dead = true
 	velocity = Vector2.ZERO
+	_drop_xp()
 	$AnimatedSprite2D.play("death")
 	$death_anim_timer.start()
 
 func _on_death_anim_timer_timeout() -> void:
 	queue_free()
+
+func _drop_xp() -> void:
+	player = get_tree().get_first_node_in_group("player")
+	if player:
+		player.gain_xp(xp_reward)
+		print("[PLANT] XP entregada al jugador: ", xp_reward)

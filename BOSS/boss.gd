@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var speed: float = 40.0
 @export var max_health: int = 200
 @export var attack_damage: int = 1
+@export var xp_reward: int =1000
 
 # ESTADOS
 
@@ -150,6 +151,7 @@ func die() -> void:
 	is_dead = true
 	velocity = Vector2.ZERO
 	print("[BOSS] Muerto")
+	_drop_xp()
 	$AnimatedSprite2D.play("death")
 	$death_anim_timer.start()
 
@@ -161,4 +163,8 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 		_resume_animation()
 	elif $AnimatedSprite2D.animation.begins_with("hurt_"):
 		is_hurt = false
-		_resume_animation()
+		_resume_animation()	
+
+func _drop_xp() -> void:
+		player.gain_xp(xp_reward)
+		print("[BOSS] XP entregada al jugador: ", xp_reward)

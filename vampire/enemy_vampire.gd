@@ -140,3 +140,9 @@ func die() -> void:
 
 func _on_death_anim_timer_timeout() -> void:
 	queue_free()
+
+func _drop_xp() -> void:
+	var player = get_tree().get_first_node_in_group("player")
+	if player:
+		player.gain_xp(xp_reward)
+		print("[VAMPIRE] XP entregada al jugador: ", xp_reward)

@@ -12,12 +12,10 @@ func _ready() -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		enemy_inside = body
-		print("[PIEDRA] Enemigo entró: ", body.name)
 
 func _on_body_exited(body: Node2D) -> void:
 	if body == enemy_inside:
 		enemy_inside = null
-		print("[PIEDRA] Enemigo salió: ", body.name)
 
 func _on_damage_tick_timeout() -> void:
 	if is_instance_valid(enemy_inside):

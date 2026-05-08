@@ -8,3 +8,6 @@ res://scenarios/golem_boss_arena.tscn
 res://SceneTest2.tscn
 res://player/Attack.gd
 res://vampire/enemy_vampire.gd
+res://plant/enemy_plant.gd
+res://scenarios/daño_piedra.gd
+res://plant/enemy_plant.tscn
