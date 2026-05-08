@@ -23,6 +23,8 @@ var is_hurt: bool = false
 
 func _ready() -> void:
 	current_health = max_health
+	$HealthBar/Bar.max_value = max_health
+	$HealthBar/Bar.value = current_health
 	print("[BOSS] Inicializado. HP: ", current_health)
 
 func _physics_process(_delta: float) -> void:
@@ -125,6 +127,7 @@ func take_damage(damage: int) -> void:
 	if is_dead or not can_take_damage:
 		return
 	current_health = max(current_health - damage, 0)
+	$HealthBar/Bar.value = current_health
 	can_take_damage = false
 	is_hurt = true
 	$take_damage_cooldown.start()

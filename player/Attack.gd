@@ -1,8 +1,8 @@
 extends Area2D
 
 #swing = ataque en curso
-
 @export var damage: int = 20
+
 var _already_hit: Array = []  
 # para que no pegue perma almacena los bodys 
 # que ya han recibido daño

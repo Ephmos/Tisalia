@@ -1,8 +1,8 @@
+ProgressBar
+Node2D
 Timer
 CollisionShape2D
 Area2D
-ProgressBar
-Node2D
 AnimatedSprite2D
 Marker2D
 CharacterBody2D

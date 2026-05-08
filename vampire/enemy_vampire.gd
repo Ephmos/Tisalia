@@ -6,6 +6,7 @@ extends CharacterBody2D
 @export var bullet_damage: int = 1
 @export var bullet_speed: float = 200.0
 @export var bullet_scene: PackedScene
+@export var xp_reward: int = 30
 
 # ESTADOS
 
@@ -133,6 +134,7 @@ func die() -> void:
 	is_dead = true
 	velocity = Vector2.ZERO
 	print("[VAMPIRE] Muerto")
+	_drop_xp() 
 	$AnimatedSprite2D.play("death")
 	$death_anim_timer.start()
 

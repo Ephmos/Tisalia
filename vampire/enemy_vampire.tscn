@@ -912,7 +912,8 @@ bg_color = Color(0.9843137, 0, 0, 1)
 
 [node name="enemy_vampire" type="CharacterBody2D" unique_id=274056241 groups=["enemy"]]
 script = ExtResource("1_7lhyr")
-bullet_speed = 100.0
+bullet_damage = 20
+bullet_speed = 120.0
 bullet_scene = ExtResource("2_dckq8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1194742574]
