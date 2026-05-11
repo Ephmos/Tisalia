@@ -6,7 +6,7 @@
 script = ExtResource("1_injrj")
 using_states = PackedStringArray()
 titles = {
-"quest1": "30",
+"quest1": "26",
 "start": "2"
 }
 character_names = PackedStringArray("Adaon")
@@ -25,12 +25,17 @@ lines = {
 "10": {
 &"id": "10",
 &"next_id": "11",
-&"responses": PackedStringArray("10", "13"),
-&"text": "Si no tengo más remedio...",
-&"type": "response"
+&"type": ""
 },
 "11": {
 &"id": "11",
+&"next_id": "12",
+&"responses": PackedStringArray("11", "15"),
+&"text": "Aceptar ayudarle.",
+&"type": "response"
+},
+"12": {
+&"id": "12",
 &"mutation": {
 &"expression": Array[Dictionary]([{
 &"i": 4,
@@ -54,186 +59,59 @@ lines = {
 }]),
 &"is_blocking": true
 },
-&"next_id": "12",
+&"next_id": "13",
 &"type": "mutation"
-},
-"12": {
-&"id": "12",
-&"is_snippet": false,
-&"next_id": "30",
-&"next_id_after": "",
-&"type": "goto"
 },
 "13": {
 &"id": "13",
-&"next_id": "14",
-&"text": "No.",
-&"type": "response"
+&"is_snippet": false,
+&"next_id": "26",
+&"next_id_after": "",
+&"type": "goto"
 },
 "14": {
 &"id": "14",
-&"mutation": {
-&"expression": Array[Dictionary]([{
-&"i": 4,
-&"type": &"variable",
-&"value": "Game"
-}, {
-&"i": 8,
-&"type": &"dot"
-}, {
-&"i": 9,
-&"type": &"variable",
-&"value": "first_quest_explanation"
-}, {
-&"i": 33,
-&"type": &"assignment",
-&"value": "="
-}, {
-&"i": 35,
-&"type": &"variable",
-&"value": "true"
-}]),
-&"is_blocking": true
-},
 &"next_id": "15",
-&"type": "mutation"
+&"type": ""
 },
 "15": {
-&"character": "Adaon",
 &"id": "15",
 &"next_id": "16",
-&"text": "Adiós, si cambias de idea, vuelve para hablar conmigo.",
-&"type": "dialogue"
+&"text": "Negarse.",
+&"type": "response"
 },
 "16": {
+&"character": "Adaon",
 &"id": "16",
+&"next_id": "17",
+&"text": "Adiós. Si cambias de idea, vuelve para hablar conmigo.",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"17": {
-&"condition": {
-&"expression": Array[Dictionary]([{
-&"i": 5,
-&"type": &"variable",
-&"value": "Game"
-}, {
-&"i": 9,
-&"type": &"dot"
-}, {
-&"i": 10,
-&"type": &"variable",
-&"value": "first_quest_started"
-}, {
-&"i": 30,
-&"type": &"comparison",
-&"value": "=="
-}, {
-&"i": 33,
-&"type": &"variable",
-&"value": "false"
-}, {
-&"i": 39,
-&"type": &"and_or",
-&"value": "and"
-}, {
-&"i": 42,
-&"type": &"variable",
-&"value": "Game"
-}, {
-&"i": 46,
-&"type": &"dot"
-}, {
-&"i": 47,
-&"type": &"variable",
-&"value": "first_quest_explanation"
-}, {
-&"i": 71,
-&"type": &"comparison",
-&"value": "=="
-}, {
-&"i": 74,
-&"type": &"variable",
-&"value": "true"
-}])
-},
-&"id": "17",
-&"next_id": "18",
-&"next_id_after": "29",
-&"next_sibling_id": "25",
-&"type": "condition"
-},
 "18": {
-&"character": "Adaon",
 &"id": "18",
 &"next_id": "19",
-&"text": "¿Me ayudarás entonces?",
-&"type": "dialogue"
+&"type": ""
 },
 "19": {
+&"condition": {},
 &"id": "19",
 &"next_id": "20",
-&"responses": PackedStringArray("19", "22"),
-&"text": "Si no tengo más remedio...",
-&"type": "response"
+&"next_id_after": "24",
+&"type": "condition"
 },
 "2": {
 &"condition": {
 &"expression": Array[Dictionary]([{
 &"i": 3,
-&"type": &"variable",
-&"value": "Game"
+&"type": &"not"
 }, {
-&"i": 7,
-&"type": &"dot"
-}, {
-&"i": 8,
-&"type": &"variable",
-&"value": "first_quest_started"
-}, {
-&"i": 28,
-&"type": &"comparison",
-&"value": "=="
-}, {
-&"i": 31,
-&"type": &"variable",
-&"value": "false"
-}, {
-&"i": 37,
-&"type": &"and_or",
-&"value": "and"
-}, {
-&"i": 40,
-&"type": &"variable",
-&"value": "Game"
-}, {
-&"i": 44,
-&"type": &"dot"
-}, {
-&"i": 45,
-&"type": &"variable",
-&"value": "first_quest_explanation"
-}, {
-&"i": 69,
-&"type": &"comparison",
-&"value": "=="
-}, {
-&"i": 72,
-&"type": &"variable",
-&"value": "false"
-}])
-},
-&"id": "2",
-&"next_id": "3",
-&"next_id_after": "29",
-&"next_sibling_id": "17",
-&"type": "condition"
-},
-"20": {
-&"id": "20",
-&"mutation": {
-&"expression": Array[Dictionary]([{
 &"i": 4,
 &"type": &"variable",
 &"value": "Game"
@@ -244,115 +122,92 @@ lines = {
 &"i": 9,
 &"type": &"variable",
 &"value": "first_quest_started"
-}, {
-&"i": 29,
-&"type": &"assignment",
-&"value": "="
-}, {
-&"i": 31,
-&"type": &"variable",
-&"value": "true"
-}]),
-&"is_blocking": true
+}])
 },
+&"id": "2",
+&"next_id": "3",
+&"next_id_after": "24",
+&"next_sibling_id": "19",
+&"type": "condition"
+},
+"20": {
+&"character": "Adaon",
+&"id": "20",
 &"next_id": "21",
-&"type": "mutation"
+&"text": "Sigo esperando a que encuentres a Hanks.",
+&"type": "dialogue"
 },
 "21": {
 &"id": "21",
-&"is_snippet": false,
-&"next_id": "30",
-&"next_id_after": "",
-&"type": "goto"
-},
-"22": {
-&"id": "22",
-&"next_id": "23",
-&"text": "No.",
-&"type": "response"
-},
-"23": {
-&"character": "Adaon",
-&"id": "23",
-&"next_id": "24",
-&"text": "Adiós, si cambias de idea, vuelve para hablar conmigo.",
-&"type": "dialogue"
-},
-"24": {
-&"id": "24",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
+"23": {
+&"id": "23",
+&"next_id": "24",
+&"type": ""
+},
+"24": {
+&"id": "24",
+&"next_id": "26",
+&"type": "title"
+},
 "25": {
-&"condition": {},
 &"id": "25",
 &"next_id": "26",
-&"next_id_after": "29",
-&"type": "condition"
+&"type": ""
 },
 "26": {
 &"character": "Adaon",
 &"id": "26",
 &"next_id": "27",
-&"text": "Sigo esperando a que encuentres a Hanks.",
+&"text": "Bien. Necesito que mates a algunas plantas aquí en la Isla, debido a que próximamente traeré a mi equipo para explorar mejor la Isla.",
 &"type": "dialogue"
 },
 "27": {
+&"character": "Adaon",
 &"id": "27",
-&"is_snippet": false,
-&"next_id": "end",
-&"next_id_after": "",
-&"type": "goto"
+&"next_id": "28",
+&"text": "Necesito que mates a 3 flores desgarradoras en la Isla, una vez completes la tarea, viajaremos a Lamsbrook.",
+&"type": "dialogue"
 },
 "28": {
+&"character": "Adaon",
 &"id": "28",
-&"next_id": "29",
-&"type": ""
+&"next_id": "30",
+&"text": "Cuando termines, vuelve a hablar conmigo.",
+&"type": "dialogue"
 },
 "29": {
 &"id": "29",
 &"next_id": "30",
-&"type": "title"
+&"type": ""
 },
 "3": {
 &"character": "Adaon",
 &"id": "3",
 &"next_id": "4",
-&"text": "Hola..., veo que te has despertado, has estado dormido un buen rato, ¿recuerdas por qué estás aquí?",
+&"text": "Hola..., veo que te has despertado. Has estado dormido un buen rato. ¿Recuerdas por qué estás aquí?",
 &"type": "dialogue"
 },
 "30": {
-&"character": "Adaon",
 &"id": "30",
 &"next_id": "31",
-&"text": "Bien, en ese caso, necesito que encuentres a Hanks, es un mercenario al que he contratado, para que revisase la isla, para poder explorar tranquilamente sin preocupaciones...",
-&"type": "dialogue"
-},
-"31": {
-&"character": "Adaon",
-&"id": "31",
-&"next_id": "32",
-&"text": "Habla con él, y pregúntale qué información ha recabado acerca de la \"Isla\" y la \"Cueva\", cuando termines, vuelve con las noticias de Hanks, después, quizás vayamos a explorar.",
-&"type": "dialogue"
-},
-"32": {
-&"id": "32",
-&"next_id": "33",
-&"responses": PackedStringArray("32"),
+&"responses": PackedStringArray("30"),
 &"text": "Está bien, eso haré.",
 &"type": "response"
 },
-"33": {
-&"id": "33",
+"31": {
+&"id": "31",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
 &"type": "goto"
 },
-"34": {
-&"id": "34",
+"32": {
+&"id": "32",
 &"is_snippet": false,
 &"next_id": "end",
 &"next_id_after": "",
@@ -369,14 +224,14 @@ lines = {
 &"character": "Adaon",
 &"id": "5",
 &"next_id": "6",
-&"text": "Yo tampoco sé por qué estás aquí, pero de todas formas quizás me seas útil.",
+&"text": "Yo tampoco sé por qué estás aquí, pero quizás me seas útil.",
 &"type": "dialogue"
 },
 "6": {
 &"character": "Adaon",
 &"id": "6",
 &"next_id": "7",
-&"text": "Soy Adaon, espeleólogo, me dedica a buscar gemas a lo largo de todo el mundo, he venido a esta Isla para recabar esmeraldas y hacer fortuna en Lamsbrook.",
+&"text": "Soy Adaon, espeleólogo. Me dedico a buscar gemas por todo el mundo. He venido a esta isla para recabar esmeraldas y hacer fortuna en Lamsbrook.",
 &"type": "dialogue"
 },
 "7": {
@@ -390,49 +245,47 @@ lines = {
 &"character": "Adaon",
 &"id": "8",
 &"next_id": "9",
-&"text": "No hay forma de salir de esta Isla, salvo que nadases, que en ese caso, la corriente te arrastraría a una muerte segura ahogado, o de otra forma, a través de mi embarcación...",
+&"text": "No hay forma de salir de esta isla... salvo que usemos mi embarcación.",
 &"type": "dialogue"
 },
 "9": {
 &"character": "Adaon",
 &"id": "9",
-&"next_id": "10",
-&"text": "Puedo llevarte a Lamsbrook, es una ciudad a unos cuantos días de aquí, pero necesito que me ayudes primero.",
+&"next_id": "11",
+&"text": "Puedo llevarte a Lamsbrook, pero necesito que me ayudes primero.",
 &"type": "dialogue"
 }
 }
 raw_text = "~ start
 
-if Game.first_quest_started == false && Game.first_quest_explanation == false
-	Adaon: Hola..., veo que te has despertado, has estado dormido un buen rato, ¿recuerdas por qué estás aquí?
+if !Game.first_quest_started
+	Adaon: Hola..., veo que te has despertado. Has estado dormido un buen rato. ¿Recuerdas por qué estás aquí?
 	- No.
-	Adaon: Yo tampoco sé por qué estás aquí, pero de todas formas quizás me seas útil.
-	Adaon: Soy Adaon, espeleólogo, me dedica a buscar gemas a lo largo de todo el mundo, he venido a esta Isla para recabar esmeraldas y hacer fortuna en Lamsbrook.
+	Adaon: Yo tampoco sé por qué estás aquí, pero quizás me seas útil.
+	Adaon: Soy Adaon, espeleólogo. Me dedico a buscar gemas por todo el mundo. He venido a esta isla para recabar esmeraldas y hacer fortuna en Lamsbrook.
 	- ¿Y eso qué tiene que ver conmigo?
-	Adaon: No hay forma de salir de esta Isla, salvo que nadases, que en ese caso, la corriente te arrastraría a una muerte segura ahogado, o de otra forma, a través de mi embarcación...
-	Adaon: Puedo llevarte a Lamsbrook, es una ciudad a unos cuantos días de aquí, pero necesito que me ayudes primero.
-	- Si no tengo más remedio...
+	Adaon: No hay forma de salir de esta isla... salvo que usemos mi embarcación.
+	Adaon: Puedo llevarte a Lamsbrook, pero necesito que me ayudes primero.
+
+	- Aceptar ayudarle.
 		set Game.first_quest_started = true
 		=> quest1
-	- No.
-		set Game.first_quest_explanation = true
-		Adaon: Adiós, si cambias de idea, vuelve para hablar conmigo.
-	=> END
-elif Game.first_quest_started == false && Game.first_quest_explanation == true
-	Adaon: ¿Me ayudarás entonces?
-	- Si no tengo más remedio...
-		set Game.first_quest_started = true
-		=> quest1
-	- No.
-		Adaon: Adiós, si cambias de idea, vuelve para hablar conmigo.
+
+	- Negarse.
+		Adaon: Adiós. Si cambias de idea, vuelve para hablar conmigo.
 		=> END
+
 else
 	Adaon: Sigo esperando a que encuentres a Hanks.
 	=> END
-	
+
+
 ~ quest1
-Adaon: Bien, en ese caso, necesito que encuentres a Hanks, es un mercenario al que he contratado, para que revisase la isla, para poder explorar tranquilamente sin preocupaciones...
-Adaon: Habla con él, y pregúntale qué información ha recabado acerca de la \"Isla\" y la \"Cueva\", cuando termines, vuelve con las noticias de Hanks, después, quizás vayamos a explorar.
+
+Adaon: Bien. Necesito que mates a algunas plantas aquí en la Isla, debido a que próximamente traeré a mi equipo para explorar mejor la Isla.
+Adaon: Necesito que mates a 3 flores desgarradoras en la Isla, una vez completes la tarea, viajaremos a Lamsbrook.
+Adaon: Cuando termines, vuelve a hablar conmigo.
+
 - Está bien, eso haré.
 => END"
 metadata/dialogue_manager_version = "3.10.1"

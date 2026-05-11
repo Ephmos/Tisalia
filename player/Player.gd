@@ -40,10 +40,6 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if !alive:
 		return
-	if Input.is_action_just_pressed("Test"):
-		take_damage()
-	if Input.is_action_just_pressed("Test2"):
-		heal()
 
 # SISTEMA DE ATAQUE (jugador → enemigo)
 
@@ -67,7 +63,10 @@ func take_damage(amount: int = 1) -> void:
 	if current_health <= 0:
 		alive = false
 		print("[PLAYER] Muerto")
-		queue_free()
+		$StateMachine.change_to("PlayerStateDeath")
+		$Animations.play("Died" + current_direction)
+		await $Animations.animation_finished
+		#queue_free()
 		#trigger animación de muerte del jugador
 		#(creo que mejor aqui)
 

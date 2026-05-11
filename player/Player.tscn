@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://da7vjb8ixdh6a" path="res://player/PlayerStateAttack.gd" id="6_aqcbf"]
 [ext_resource type="Script" uid="uid://brs11nop7ts7o" path="res://player/PlayerSFX.gd" id="7_gskgj"]
 [ext_resource type="Script" uid="uid://cin5bvoaqidg" path="res://player/Attack.gd" id="8_06mnu"]
+[ext_resource type="Script" uid="uid://1i446l1wlhg6" path="res://player/PlayerStateDeath.gd" id="8_mhpjh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpjcp"]
 size = Vector2(11, 19)
@@ -278,6 +279,74 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [3.1415927]
+}
+
+[sub_resource type="Animation" id="Animation_uewl2"]
+resource_name = "DiedDown"
+length = 0.425
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [44]
+}
+
+[sub_resource type="Animation" id="Animation_ofhxi"]
+resource_name = "DiedLeft"
+length = 0.425
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [71]
+}
+
+[sub_resource type="Animation" id="Animation_yu5hk"]
+resource_name = "DiedRight"
+length = 0.425
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [62]
+}
+
+[sub_resource type="Animation" id="Animation_q6miu"]
+resource_name = "DiedUp"
+length = 0.425
+step = 0.16666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Texture:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [53]
 }
 
 [sub_resource type="Animation" id="Animation_kpjcp"]
@@ -700,6 +769,10 @@ _data = {
 &"AttackingLeft": SubResource("Animation_06mnu"),
 &"AttackingRight": SubResource("Animation_gskgj"),
 &"AttackingUp": SubResource("Animation_mhpjh"),
+&"DiedDown": SubResource("Animation_uewl2"),
+&"DiedLeft": SubResource("Animation_ofhxi"),
+&"DiedRight": SubResource("Animation_yu5hk"),
+&"DiedUp": SubResource("Animation_q6miu"),
 &"IdleDown": SubResource("Animation_kpjcp"),
 &"IdleLeft": SubResource("Animation_kne1u"),
 &"IdleRight": SubResource("Animation_e80uo"),
@@ -738,7 +811,7 @@ script = ExtResource("1_kpjcp")
 texture = ExtResource("1_xhfnw")
 hframes = 9
 vframes = 12
-frame = 72
+frame = 53
 
 [node name="Collision" type="CollisionShape2D" parent="." unique_id=1635266208]
 position = Vector2(0, 1)
@@ -770,6 +843,10 @@ actionable_finder = NodePath("../../ActionableDirection/ActionableFinder")
 
 [node name="PlayerStateAttack" type="Node" parent="StateMachine" unique_id=1732709464 node_paths=PackedStringArray("animations")]
 script = ExtResource("6_aqcbf")
+animations = NodePath("../../Animations")
+
+[node name="PlayerStateDeath" type="Node" parent="StateMachine" unique_id=1511995749 node_paths=PackedStringArray("animations")]
+script = ExtResource("8_mhpjh")
 animations = NodePath("../../Animations")
 
 [node name="ActionableDirection" type="Marker2D" parent="." unique_id=771939998]
