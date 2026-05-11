@@ -76,6 +76,7 @@ func heal(amount: int = 1) -> void:
 	if not alive:
 		return
 	current_health = min(current_health + amount, max_health)
+	_update_health_bar()
 	print("[PLAYER] Curado: +", amount, " | HP actual: ", current_health)
 
 # SISTEMA DE XP Y NIVELES
