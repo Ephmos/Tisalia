@@ -1,4 +1,4 @@
-res://player/Player.tscn
-res://player/Player.gd
-res://scenarios/golem_boss_arena.tscn
-res://player/PlayerStateDeath.gd
+res://animals/rat.tscn
+res://animals/rat.gd
+res://plant/enemy_plant.tscn
+res://SceneTest2.tscn
