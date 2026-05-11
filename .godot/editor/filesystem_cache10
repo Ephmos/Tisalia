@@ -108,27 +108,29 @@ BoldPixels.ttf::FontFile::1249851716336466184::1771339939::1771339939::1::::<><>
 ::res://plant/::1778233967
 enemy_plant.gd::GDScript::3979668620096243563::1778233967::0::1::::<>CharacterBody2D<><>0<>0<><>::
 enemy_plant.tscn::PackedScene::2347390785697660346::1778230314::0::1::::<><><>0<>0<><>::uid://bwx1tchf4rdmp::::res://plant/enemy_plant.gd<>uid://d0xti1oxcb7wl::::res://sprites/Plantas/Plant3/Idle/Plant3_Idle_full.png<>uid://b68eqm42h5117::::res://sprites/Plantas/Plant3/Death/Plant3_Death_brown.png<>uid://y512hn56b2aj::::res://sprites/Plantas/Plant3/Attack/Plant3_Attack_full.png<>uid://3lojgbmjqf0g::::res://sprites/Plantas/Plant3/Walk/Plant3_Walk_full.png<>uid://dw7p15hlnwvv4::::res://sprites/Plantas/Plant3/Hurt/Plant3_Hurt_full.png
-::res://player/::1778484689
+::res://player/::1778488098
 Attack.gd::GDScript::157735689632630924::1778230314::0::1::::<>Area2D<><>0<>0<><>::
-Player.gd::GDScript::4490132493569741693::1778233024::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::4077540307065268150::1778484689::0::1::::<><><>0<>0<><>::uid://b48b3dbdmk5n2::::res://player/Player.gd<>uid://b2g82ov3ldoy5::::res://sprites/CharacterDefinitive.png<>uid://4ngv2vuhpwj0::::res://statemachine/StateMachine.tscn<>uid://efxkk3qfmc4f::::res://player/PlayerStateIdle.gd<>uid://didacbsi3arr1::::res://player/PlayerStateWalk.gd<>uid://da7vjb8ixdh6a::::res://player/PlayerStateAttack.gd<>uid://brs11nop7ts7o::::res://player/PlayerSFX.gd<>uid://cin5bvoaqidg::::res://player/Attack.gd
+Player.gd::GDScript::4490132493569741693::1778486272::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::4077540307065268150::1778488098::0::1::::<><><>0<>0<><>::uid://b48b3dbdmk5n2::::res://player/Player.gd<>uid://b2g82ov3ldoy5::::res://sprites/CharacterDefinitive.png<>uid://4ngv2vuhpwj0::::res://statemachine/StateMachine.tscn<>uid://efxkk3qfmc4f::::res://player/PlayerStateIdle.gd<>uid://didacbsi3arr1::::res://player/PlayerStateWalk.gd<>uid://da7vjb8ixdh6a::::res://player/PlayerStateAttack.gd<>uid://brs11nop7ts7o::::res://player/PlayerSFX.gd<>uid://cin5bvoaqidg::::res://player/Attack.gd<>uid://1i446l1wlhg6::::res://player/PlayerStateDeath.gd
 PlayerSFX.gd::GDScript::3618415602722059406::1771318296::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
 PlayerStateAttack.gd::GDScript::7226613372098697858::1778232599::0::1::::<>StateBase<><>0<>0<><>::
 PlayerStateIdle.gd::GDScript::292492181317254551::1771586604::0::1::::<>StateBase<><>0<>0<><>::
 PlayerStateWalk.gd::GDScript::7726969585764302048::1771588049::0::1::::<>StateBase<><>0<>0<><>::
-::res://scenarios/::1778279949
+PlayerStateDeath.gd::GDScript::1843239183862653759::1778486551::0::1::::<>StateBase<><>0<>0<><>::
+::res://scenarios/::1778486553
 daño_piedra.gd::GDScript::2084335849733004193::1778230314::0::1::::<>Area2D<><>0<>0<><>::
 Forest.tres::TileSet::1922616971392290933::1778224199::0::1::::<><><>0<>0<><>::uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png
 Forest.tscn::PackedScene::18110933117673041::1776068077::0::1::::<><><>0<>0<><>::uid://2nlhrbj0udn6::::res://scenarios/Forest.tres
-golem_boss_arena.tscn::PackedScene::2068712143650299060::1778279949::0::1::::<><><>0<>0<><>::uid://b0db8wj401evc::::res://sprites/MainLev2.0.png<>uid://chsq4o7fr1pu4::::res://sprites/RPGW_Caves_v2.1/decorative.png<>uid://4xwybg1n6tcj::::res://scenarios/daño_piedra.gd<>uid://b86o18qn4pmvs::::res://boss/boss.tscn<>uid://bydgq1bvyaibu::::res://player/Player.tscn
+golem_boss_arena.tscn::PackedScene::2068712143650299060::1778486553::0::1::::<><><>0<>0<><>::uid://b0db8wj401evc::::res://sprites/MainLev2.0.png<>uid://chsq4o7fr1pu4::::res://sprites/RPGW_Caves_v2.1/decorative.png<>uid://4xwybg1n6tcj::::res://scenarios/daño_piedra.gd<>uid://b86o18qn4pmvs::::res://boss/boss.tscn<>uid://bydgq1bvyaibu::::res://player/Player.tscn
 GreenSummit.tres::TileSet::3916358222963638663::1778231732::0::1::::<><><>0<>0<><>::uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png
 GreenSummit.tscn::PackedScene::4341578686650841569::1778235402::0::1::::<><><>0<>0<><>::uid://bv2d3281kxqsl::::res://scenarios/GreenSummit.tres<>uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png<>uid://8pdgh4y2qxos::::res://plant/enemy_plant.tscn
 Lamsbrook.tres::TileSet::609265269612103366::1778224200::0::1::::<><><>0<>0<><>::uid://cs4au8xvvr380::::res://sprites/seasonal sample (spring).png<>uid://bvojj3um5futv::::res://sprites/simplified full timber.png<>uid://b2uybrce4bho::::res://sprites/cozy furnishings sampler.png<>uid://b0db8wj401evc::::res://sprites/MainLev2.0.png
 Lamsbrook.tscn::PackedScene::3423142478178864337::1778224282::0::1::::<><><>0<>0<><>::uid://ixerlsc7bof3::::res://scenarios/Lamsbrook.tres
 lamsbrook_2.tscn::PackedScene::5381271761118013448::1776754418::0::1::::<><><>0<>0<><>::uid://comuysfubq67x::::res://sprites/seasonal sample (summer).png<>uid://bvojj3um5futv::::res://sprites/simplified full timber.png
-::res://sprites/::1777879332
+::res://sprites/::1778495240
+animals.png::CompressedTexture2D::6418551157093018351::1778495240::1778495240::1::::<><><>0<>0<>e2d94dd9df34364b7402b852f41f8035<>res://.godot/imported/animals.png-b7ca5c85bb3d8eb32d3d573e92670bfc.ctex::
 ArrowUI.png::CompressedTexture2D::3019208576087250099::1771530483::1771530483::1::::<><><>0<>0<>26e6fef8dc99fcb89f88f5a22a21c41d<>res://.godot/imported/ArrowUI.png-b8ea01ae1abea1fa1fb60fa97c466231.ctex::
-CharacterDefinitive.png::CompressedTexture2D::4295958374695880846::1778484751::1778485064::1::::<><><>0<>0<>aef92c0d0f86a21b368c4af87425b5e8<>res://.godot/imported/CharacterDefinitive.png-79d8cebf539a72a72b0a0d2698885c04.ctex::
+CharacterDefinitive.png::CompressedTexture2D::4295958374695880846::1778485070::1778485064::1::::<><><>0<>0<>aef92c0d0f86a21b368c4af87425b5e8<>res://.godot/imported/CharacterDefinitive.png-79d8cebf539a72a72b0a0d2698885c04.ctex::
 cozy furnishings sampler.png::CompressedTexture2D::127184320789075752::1776076693::1776076693::1::::<><><>0<>0<>9db8e0510c8b7f4b79e9ae28b1ec2bb7<>res://.godot/imported/cozy furnishings sampler.png-31857f4f1115243572d40be7be0168f8.ctex::
 Female1.png::CompressedTexture2D::3446038517323950421::1771347660::1771347661::1::::<><><>0<>0<>48fd5514d02351e20841925ccad93a5f<>res://.godot/imported/Female1.png-ca22f27eb37b574e214fe1414b36ec79.ctex::
 Female2.png::CompressedTexture2D::2682554666067517311::1771347660::1771347661::1::::<><><>0<>0<>bbd111f713bc2e1a2b212c2556ce3f38<>res://.godot/imported/Female2.png-9f311c1df8cf04289d4a1c82871fcd35.ctex::
