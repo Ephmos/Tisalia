@@ -1,8 +1,3 @@
-res://animals/rat.tscn
-res://animals/rat.gd
-res://plant/enemy_plant.tscn
+res://totems/buffing_totem.tscn
+res://totems/buffing_totem.gd
 res://SceneTest2.tscn
-res://totems/healing_totem.gd
-res://totems/healing_totem.tscn
-res://player/Player.tscn
-res://player/Player.gd

@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://c3homux8vngts"]
+
+[ext_resource type="Texture2D" uid="uid://w7tc5gqjh23e" path="res://sprites/Totems/Buff Totem Sprite Sheet v1.1.png" id="1_28w6k"]
+[ext_resource type="Script" uid="uid://bn17hjwnay3ru" path="res://totems/buffing_totem.gd" id="1_cyltk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyltk"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wuwwf"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6t1e2"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkqtl"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urby1"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdsom"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08j7h"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rh0le"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcau1"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m50ac"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kw28t"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36qpx"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxsyl"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ueh2"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhkkr"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5qwhm"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3nwh"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjusc"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkw6w"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t3kua"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rd0pw"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d142m"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(224, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3iit"]
+atlas = ExtResource("1_28w6k")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u46oh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyltk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wuwwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6t1e2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkqtl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urby1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdsom")
+}],
+"loop": false,
+"name": &"appear",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08j7h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rh0le")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcau1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m50ac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kw28t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36qpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxsyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ueh2")
+}],
+"loop": true,
+"name": &"buff",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nhkkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5qwhm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3nwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjusc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkw6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t3kua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rd0pw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d142m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x3iit")
+}],
+"loop": false,
+"name": &"disappear",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_28w6k"]
+radius = 178.04494
+
+[node name="buffing_totem" type="CharacterBody2D" unique_id=613251800]
+script = ExtResource("1_cyltk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=830535149]
+sprite_frames = SubResource("SpriteFrames_u46oh")
+animation = &"buff"
+frame_progress = 0.16951051
+
+[node name="Area2D" type="Area2D" parent="." unique_id=44865068]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=235210316]
+position = Vector2(0, 5)
+shape = SubResource("CircleShape2D_28w6k")
+
+[node name="BuffArea" type="Node2D" parent="." unique_id=914812131]
+
+[node name="Circle" type="Polygon2D" parent="BuffArea" unique_id=272998547]
+color = Color(0.5372549, 0.06666667, 0.6862745, 0.5411765)
+
+[node name="BuffTimer" type="Timer" parent="." unique_id=1671813962]
+wait_time = 2.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="draw" from="BuffArea" to="." method="_on_buff_area_draw"]
+[connection signal="timeout" from="BuffTimer" to="." method="_on_buff_timer_timeout"]

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://8pdgh4y2qxos" path="res://plant/enemy_plant.tscn" id="4_gskmc"]
 [ext_resource type="PackedScene" uid="uid://5eqxbrayb8ec" path="res://animals/rat.tscn" id="5_7r5t3"]
 [ext_resource type="PackedScene" uid="uid://dkjfhri0clllx" path="res://totems/healing_totem.tscn" id="5_a0g2q"]
+[ext_resource type="PackedScene" uid="uid://c3homux8vngts" path="res://totems/buffing_totem.tscn" id="6_a0g2q"]
 
 [node name="SceneTest2" type="Node2D" unique_id=2063520055]
 
@@ -22,3 +23,6 @@ position = Vector2(-132, 2)
 
 [node name="healing_totem" parent="." unique_id=1484185098 instance=ExtResource("5_a0g2q")]
 position = Vector2(-228, -119)
+
+[node name="buffing_totem" parent="." unique_id=613251800 instance=ExtResource("6_a0g2q")]
+position = Vector2(101, -37)
