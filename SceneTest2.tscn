@@ -1,28 +1,17 @@
 [gd_scene format=3 uid="uid://dk88mm4nyq7xg"]
 
 [ext_resource type="PackedScene" uid="uid://bydgq1bvyaibu" path="res://player/Player.tscn" id="1_6eda2"]
-[ext_resource type="PackedScene" uid="uid://c8mimtwi0ypu3" path="res://vampire/enemy_vampire.tscn" id="2_kq3il"]
-[ext_resource type="PackedScene" uid="uid://8pdgh4y2qxos" path="res://plant/enemy_plant.tscn" id="4_gskmc"]
-[ext_resource type="PackedScene" uid="uid://5eqxbrayb8ec" path="res://animals/rat.tscn" id="5_7r5t3"]
-[ext_resource type="PackedScene" uid="uid://dkjfhri0clllx" path="res://totems/healing_totem.tscn" id="5_a0g2q"]
-[ext_resource type="PackedScene" uid="uid://c3homux8vngts" path="res://totems/buffing_totem.tscn" id="6_a0g2q"]
+[ext_resource type="PackedScene" uid="uid://c8mimtwi0ypu3" path="res://vampire/enemy_vampire.tscn" id="3_kq3il"]
+[ext_resource type="PackedScene" uid="uid://b2den502wfmhg" path="res://player/hud.tscn" id="4_gskmc"]
 
 [node name="SceneTest2" type="Node2D" unique_id=2063520055]
 
 [node name="Player" parent="." unique_id=1785731520 instance=ExtResource("1_6eda2")]
 
-[node name="enemy_vampire" parent="." unique_id=274056241 instance=ExtResource("2_kq3il")]
-position = Vector2(148, 3)
+[node name="HUD" parent="." unique_id=1701982456 instance=ExtResource("4_gskmc")]
 
-[node name="enemy_Plant" parent="." unique_id=1917947793 instance=ExtResource("4_gskmc")]
-position = Vector2(-291, 157)
-attack_damage = 20
+[node name="enemy_vampire" parent="." unique_id=274056241 instance=ExtResource("3_kq3il")]
+position = Vector2(235, -23)
 
-[node name="rat" parent="." unique_id=1527549430 instance=ExtResource("5_7r5t3")]
-position = Vector2(-132, 2)
-
-[node name="healing_totem" parent="." unique_id=1484185098 instance=ExtResource("5_a0g2q")]
-position = Vector2(-228, -119)
-
-[node name="buffing_totem" parent="." unique_id=613251800 instance=ExtResource("6_a0g2q")]
-position = Vector2(101, -37)
+[node name="enemy_vampire2" parent="." unique_id=83415996 instance=ExtResource("3_kq3il")]
+position = Vector2(-234, -116)

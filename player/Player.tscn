@@ -806,6 +806,10 @@ bg_color = Color(0.18431373, 0.52156866, 1, 1)
 [node name="Player" type="CharacterBody2D" unique_id=1785731520 groups=["player"]]
 y_sort_enabled = true
 script = ExtResource("1_kpjcp")
+current_direction = null
+max_health = null
+base_health = null
+base_damage = null
 
 [node name="Texture" type="Sprite2D" parent="." unique_id=399168601]
 texture = ExtResource("1_xhfnw")

@@ -1,3 +1,7 @@
-res://totems/buffing_totem.tscn
-res://totems/buffing_totem.gd
+res://player/hud.tscn
+res://player/hud.gd
 res://SceneTest2.tscn
+res://gold_popup.gd
+res://gold/gold_popup.tscn
+res://vampire/enemy_vampire.tscn
+res://vampire/enemy_vampire.gd

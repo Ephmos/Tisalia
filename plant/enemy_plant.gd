@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 @export var speed: float = 120.0
 @export var max_health: int = 100
-@export var attack_damage: int = 20
+@export var attack_damage: int = 25
 @export var xp_reward: int = 50
 
 # ESTADOS
@@ -69,14 +69,12 @@ func _update_direction_suffix() -> void:
 # AGGRO PLAYER
 
 func _on_detection_area_body_entered(body: Node2D) -> void:
-	print("[PLANT] detection_area body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player = body
 		chase = true
 		print("[PLANT] Chase activado")
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
-	print("[PLANT] detection_area body_exited: ", body.name)
 	if body.is_in_group("player"):
 		player = null
 		chase = false
@@ -85,7 +83,6 @@ func _on_detection_area_body_exited(body: Node2D) -> void:
 # HITBOX DE ATAQUE (enemigo → jugador)
 
 func _on_enemy_plant_hitbox_body_entered(body: Node2D) -> void:
-	print("[PLANT] hitbox body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player_in_attack_zone = true
 

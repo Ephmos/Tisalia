@@ -7,9 +7,10 @@ extends CharacterBody2D
 @export var bullet_speed: float = 200.0
 @export var bullet_scene: PackedScene
 @export var xp_reward: int = 30
+@export var gold_reward: int = 15 
 
 # ESTADOS
-
+const GoldPopup = preload("res://gold/gold_popup.tscn")
 var current_health: int
 var player: Node2D = null
 var can_shoot: bool = true
@@ -134,7 +135,8 @@ func die() -> void:
 	is_dead = true
 	velocity = Vector2.ZERO
 	print("[VAMPIRE] Muerto")
-	_drop_xp() 
+	_drop_xp()
+	_drop_gold()
 	$AnimatedSprite2D.play("death")
 	$death_anim_timer.start()
 
@@ -142,7 +144,15 @@ func _on_death_anim_timer_timeout() -> void:
 	queue_free()
 
 func _drop_xp() -> void:
-	var player = get_tree().get_first_node_in_group("player")
+	player = get_tree().get_first_node_in_group("player")
 	if player:
 		player.gain_xp(xp_reward)
 		print("[VAMPIRE] XP entregada al jugador: ", xp_reward)
+
+func _drop_gold() -> void:
+	player = get_tree().get_first_node_in_group("player")
+	if player:
+		player.add_gold(gold_reward)
+	var popup = GoldPopup.instantiate()
+	get_tree().current_scene.add_child(popup)
+	popup.setup(gold_reward, global_position)

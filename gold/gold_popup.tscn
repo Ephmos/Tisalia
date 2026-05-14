@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c07ieub0hlwhg"]
+
+[ext_resource type="Script" uid="uid://8ocu0tovkdf4" path="res://gold_popup.gd" id="1_oimys"]
+[ext_resource type="Texture2D" uid="uid://341b7xg8f826" path="res://sprites/coins.png" id="2_3wujn"]
+
+[node name="GoldPopup" type="Node2D" unique_id=1555766314]
+script = ExtResource("1_oimys")
+
+[node name="GoldIcon" type="Sprite2D" parent="." unique_id=1569256540]
+position = Vector2(4, 4)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_3wujn")
+offset = Vector2(-20, 0)
+
+[node name="GoldLabel" type="Label" parent="." unique_id=185820888]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(0.35, 0.35)
+text = "+0"
+horizontal_alignment = 1

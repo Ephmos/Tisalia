@@ -194,6 +194,7 @@ animation = &"buff"
 frame_progress = 0.16951051
 
 [node name="Area2D" type="Area2D" parent="." unique_id=44865068]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=235210316]
 position = Vector2(0, 5)

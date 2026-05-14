@@ -1,3 +1,8 @@
+Label
+Sprite2D
+TextureRect
+HBoxContainer
+CanvasLayer
 Timer
 Polygon2D
 Node2D
@@ -7,8 +12,3 @@ AnimatedSprite2D
 CharacterBody2D
 ProgressBar
 Node
-Marker2D
-TileMapLayer
-CanvasLayer
-Control
-Button

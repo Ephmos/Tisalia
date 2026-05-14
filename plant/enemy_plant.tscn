@@ -879,7 +879,6 @@ bg_color = Color(0.9843137, 0, 0, 1)
 
 [node name="enemy_Plant" type="CharacterBody2D" unique_id=1917947793]
 script = ExtResource("1_ah076")
-attack_damage = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1101449581 groups=["enemy"]]
 scale = Vector2(1.21875, 1.0473633)

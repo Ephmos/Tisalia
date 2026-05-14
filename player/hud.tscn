@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b2den502wfmhg"]
+
+[ext_resource type="Script" uid="uid://bv1ikxct68o8f" path="res://player/hud.gd" id="1_2mhk3"]
+[ext_resource type="Texture2D" uid="uid://341b7xg8f826" path="res://sprites/coins.png" id="2_2e3ur"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1701982456]
+script = ExtResource("1_2mhk3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1962320745]
+offset_left = 19.0
+offset_top = 10.0
+offset_right = 59.0
+offset_bottom = 50.0
+
+[node name="GoldIcon" type="TextureRect" parent="HBoxContainer" unique_id=1490742065]
+layout_mode = 2
+texture = ExtResource("2_2e3ur")
+expand_mode = 2
+
+[node name="GoldLabel" type="Label" parent="HBoxContainer" unique_id=1429152147]
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1

@@ -69,14 +69,12 @@ func _update_direction_suffix() -> void:
 # AGGRO PLAYER
 
 func _on_detection_area_body_entered(body: Node2D) -> void:
-	print("[BOSS] detection_area body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player = body
 		chase = true
 		print("[BOSS] Chase activado")
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
-	print("[BOSS] detection_area body_exited: ", body.name)
 	if body.is_in_group("player"):
 		player = null
 		chase = false
@@ -85,7 +83,6 @@ func _on_detection_area_body_exited(body: Node2D) -> void:
 # HITBOX DE ATAQUE (boss → jugador)
 
 func _on_boss_hitbox_body_entered(body: Node2D) -> void:
-	print("[BOSS] hitbox body_entered: ", body.name, " | en grupo player: ", body.is_in_group("player"))
 	if body.is_in_group("player"):
 		player_in_attack_zone = true
 

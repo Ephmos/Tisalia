@@ -27,6 +27,7 @@ var current_health: int = 30
 var current_level: int = 1
 var current_xp: int = 0
 var xp_to_next_level: int = 100
+var gold: int = 0
 
 # MAIN
 
@@ -124,3 +125,10 @@ func _update_xp_bar() -> void:
 	$XpBar/Bar.value = current_xp
 	if current_level >= max_level:
 		$XpBar/Bar.value = $XpBar/Bar.max_value
+
+#MONEDA
+
+func add_gold(amount: int) -> void:
+	gold += amount
+	print("[PLAYER] +%d Gold | Total: %d" % [amount, gold])
+	Events.emit_signal("gold_updated", gold)

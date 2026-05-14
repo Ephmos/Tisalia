@@ -1,3 +1,5 @@
+res://gold/
+res://player/
 res://sprites/Totems/
 res://totems/
 res://sprites/
@@ -18,5 +20,3 @@ res://sprites/Plantas/Plant3/Hurt/
 res://sprites/Plantas/Plant3/Run/
 res://sprites/Plantas/Plant3/Walk/
 res://sprites/Plantas/Plant3/Attack/
-res://sprites/Plantas/Plant3/Idle/
-res://plant/

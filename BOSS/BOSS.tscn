@@ -1,12 +1,11 @@
 [gd_scene format=3 uid="uid://b86o18qn4pmvs"]
 
-[ext_resource type="Script" uid="uid://dwgk2ui3vflyy" path="res://boss/boss.gd" id="1_qr6tj"]
+[ext_resource type="Script" uid="uid://dwgk2ui3vflyy" path="res://BOSS/boss.gd" id="1_qr6tj"]
 [ext_resource type="Texture2D" uid="uid://b51er06sboc6a" path="res://sprites/Golem1/Idle/Golem1_Idle_full.png" id="2_qr6tj"]
 [ext_resource type="Texture2D" uid="uid://cpqrngkkavda8" path="res://sprites/Golem1/Attack/Golem1_Attack_full.png" id="3_16us7"]
 [ext_resource type="Texture2D" uid="uid://d2jh3fibc1q8b" path="res://sprites/Golem1/Hurt/Golem1_Hurt_full.png" id="4_6kowr"]
 [ext_resource type="Texture2D" uid="uid://da0j264g2cgx" path="res://sprites/Golem1/Death/Golem1_Death_full.png" id="4_idwny"]
 [ext_resource type="Texture2D" uid="uid://bjrbhd14d77w5" path="res://sprites/Golem1/Walk/Golem1_Walk_full.png" id="5_vovur"]
-
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ekw1"]
 atlas = ExtResource("3_16us7")
